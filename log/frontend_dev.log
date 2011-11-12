@@ -1,0 +1,232 @@
+nov. 12 19:07:47 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+nov. 12 19:07:47 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 12 19:07:47 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 12 19:07:47 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+nov. 12 19:07:47 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\lib\vendor\symfony\lib/controller/default/templates/indexSuccess.php"
+nov. 12 19:07:47 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+nov. 12 19:07:47 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+nov. 12 19:07:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov. 12 19:07:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 12 19:07:47 symfony [info] {sfWebDebugLogger} Configuration 649.26 ms (9)
+nov. 12 19:07:47 symfony [info] {sfWebDebugLogger} Factories 487.56 ms (1)
+nov. 12 19:07:47 symfony [info] {sfWebDebugLogger} Action "default/index" 0.75 ms (1)
+nov. 12 19:07:47 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 53.56 ms (1)
+nov. 12 19:07:47 symfony [info] {sfWebResponse} Send content (31055 o)
+nov. 12 19:08:57 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+nov. 12 19:08:57 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 12 19:08:57 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 12 19:08:57 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+nov. 12 19:08:57 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\lib\vendor\symfony\lib/controller/default/templates/indexSuccess.php"
+nov. 12 19:08:57 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+nov. 12 19:08:57 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+nov. 12 19:08:57 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov. 12 19:08:57 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 12 19:08:57 symfony [info] {sfWebDebugLogger} Configuration 27.90 ms (9)
+nov. 12 19:08:57 symfony [info] {sfWebDebugLogger} Factories 103.80 ms (1)
+nov. 12 19:08:57 symfony [info] {sfWebDebugLogger} Action "default/index" 0.58 ms (1)
+nov. 12 19:08:57 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 37.18 ms (1)
+nov. 12 19:08:57 symfony [info] {sfWebResponse} Send content (31053 o)
+nov. 12 19:42:43 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+nov. 12 19:42:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 12 19:42:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 12 19:42:43 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+nov. 12 19:42:43 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\lib\vendor\symfony\lib/controller/default/templates/indexSuccess.php"
+nov. 12 19:42:43 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+nov. 12 19:42:43 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+nov. 12 19:42:43 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov. 12 19:42:43 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 12 19:42:43 symfony [info] {sfWebDebugLogger} Configuration 22.45 ms (9)
+nov. 12 19:42:43 symfony [info] {sfWebDebugLogger} Factories 135.74 ms (1)
+nov. 12 19:42:43 symfony [info] {sfWebDebugLogger} Action "default/index" 0.55 ms (1)
+nov. 12 19:42:43 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 34.46 ms (1)
+nov. 12 19:42:43 symfony [info] {sfWebResponse} Send content (30546 o)
+nov. 12 19:58:46 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /deevonaute with parameters array (  'module' => 'deevonaute',  'action' => 'index',)
+nov. 12 19:58:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 12 19:58:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 12 19:58:46 symfony [info] {deevonauteActions} Call "deevonauteActions->executeIndex()"
+nov. 12 19:58:46 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov. 12 19:58:46 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.type AS s__type, s.profile_photo AS s__profile_photo, s.gender AS s__gender, s.culture AS s__culture, s.country AS s__country, s.way AS s__way, s.additional_address AS s__additional_address, s.zip_code AS s__zip_code, s.city AS s__city, s.date_of_birth AS s__date_of_birth, s.phone_number AS s__phone_number, s.film_prefere_1 AS s__film_prefere_1, s.film_prefere_2 AS s__film_prefere_2, s.film_prefere_3 AS s__film_prefere_3, s.artiste_prefere_1 AS s__artiste_prefere_1, s.artiste_prefere_2 AS s__artiste_prefere_2, s.artiste_prefere_3 AS s__artiste_prefere_3, s.genre_prefere_1 AS s__genre_prefere_1, s.genre_prefere_2 AS s__genre_prefere_2, s.genre_prefere_3 AS s__genre_prefere_3, s.size_of_storage_space AS s__size_of_storage_space, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.type = 1) - ()
+nov. 12 19:58:46 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/deevonaute/templates/indexSuccess.php"
+nov. 12 19:58:46 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 12 19:58:46 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 12 19:58:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov. 12 19:58:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 12 19:58:46 symfony [info] {sfWebDebugLogger} Configuration 193.80 ms (10)
+nov. 12 19:58:46 symfony [info] {sfWebDebugLogger} Factories 175.47 ms (1)
+nov. 12 19:58:46 symfony [info] {sfWebDebugLogger} Action "deevonaute/index" 128.41 ms (1)
+nov. 12 19:58:46 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+nov. 12 19:58:46 symfony [info] {sfWebDebugLogger} View "Success" for "deevonaute/index" 93.88 ms (1)
+nov. 12 19:58:47 symfony [info] {sfWebResponse} Send content (37715 o)
+nov. 12 19:58:55 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /deevonaute with parameters array (  'module' => 'deevonaute',  'action' => 'index',)
+nov. 12 19:58:55 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 12 19:58:55 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 12 19:58:55 symfony [info] {deevonauteActions} Call "deevonauteActions->executeIndex()"
+nov. 12 19:58:55 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov. 12 19:58:55 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.type AS s__type, s.profile_photo AS s__profile_photo, s.gender AS s__gender, s.culture AS s__culture, s.country AS s__country, s.way AS s__way, s.additional_address AS s__additional_address, s.zip_code AS s__zip_code, s.city AS s__city, s.date_of_birth AS s__date_of_birth, s.phone_number AS s__phone_number, s.film_prefere_1 AS s__film_prefere_1, s.film_prefere_2 AS s__film_prefere_2, s.film_prefere_3 AS s__film_prefere_3, s.artiste_prefere_1 AS s__artiste_prefere_1, s.artiste_prefere_2 AS s__artiste_prefere_2, s.artiste_prefere_3 AS s__artiste_prefere_3, s.genre_prefere_1 AS s__genre_prefere_1, s.genre_prefere_2 AS s__genre_prefere_2, s.genre_prefere_3 AS s__genre_prefere_3, s.size_of_storage_space AS s__size_of_storage_space, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.type = 1) - ()
+nov. 12 19:58:55 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/deevonaute/templates/indexSuccess.php"
+nov. 12 19:58:55 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 12 19:58:55 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 12 19:58:55 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov. 12 19:58:55 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 12 19:58:55 symfony [info] {sfWebDebugLogger} Configuration 23.32 ms (9)
+nov. 12 19:58:55 symfony [info] {sfWebDebugLogger} Factories 100.58 ms (1)
+nov. 12 19:58:55 symfony [info] {sfWebDebugLogger} Action "deevonaute/index" 140.12 ms (1)
+nov. 12 19:58:55 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+nov. 12 19:58:55 symfony [info] {sfWebDebugLogger} View "Success" for "deevonaute/index" 32.32 ms (1)
+nov. 12 19:58:55 symfony [info] {sfWebResponse} Send content (37743 o)
+nov. 12 19:59:20 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /deevonaute with parameters array (  'module' => 'deevonaute',  'action' => 'index',)
+nov. 12 19:59:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 12 19:59:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 12 19:59:20 symfony [info] {deevonauteActions} Call "deevonauteActions->executeIndex()"
+nov. 12 19:59:20 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov. 12 19:59:20 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.type AS s__type, s.profile_photo AS s__profile_photo, s.gender AS s__gender, s.culture AS s__culture, s.country AS s__country, s.way AS s__way, s.additional_address AS s__additional_address, s.zip_code AS s__zip_code, s.city AS s__city, s.date_of_birth AS s__date_of_birth, s.phone_number AS s__phone_number, s.film_prefere_1 AS s__film_prefere_1, s.film_prefere_2 AS s__film_prefere_2, s.film_prefere_3 AS s__film_prefere_3, s.artiste_prefere_1 AS s__artiste_prefere_1, s.artiste_prefere_2 AS s__artiste_prefere_2, s.artiste_prefere_3 AS s__artiste_prefere_3, s.genre_prefere_1 AS s__genre_prefere_1, s.genre_prefere_2 AS s__genre_prefere_2, s.genre_prefere_3 AS s__genre_prefere_3, s.size_of_storage_space AS s__size_of_storage_space, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.type = 1) - ()
+nov. 12 19:59:20 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/deevonaute/templates/indexSuccess.php"
+nov. 12 19:59:20 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 12 19:59:20 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 12 19:59:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov. 12 19:59:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 12 19:59:20 symfony [info] {sfWebDebugLogger} Configuration 27.30 ms (9)
+nov. 12 19:59:20 symfony [info] {sfWebDebugLogger} Factories 107.71 ms (1)
+nov. 12 19:59:20 symfony [info] {sfWebDebugLogger} Action "deevonaute/index" 117.64 ms (1)
+nov. 12 19:59:20 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+nov. 12 19:59:20 symfony [info] {sfWebDebugLogger} View "Success" for "deevonaute/index" 41.96 ms (1)
+nov. 12 19:59:20 symfony [info] {sfWebResponse} Send content (37743 o)
+nov. 12 19:59:24 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /deevonaute with parameters array (  'module' => 'deevonaute',  'action' => 'index',)
+nov. 12 19:59:24 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 12 19:59:24 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 12 19:59:24 symfony [info] {deevonauteActions} Call "deevonauteActions->executeIndex()"
+nov. 12 19:59:24 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov. 12 19:59:24 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.type AS s__type, s.profile_photo AS s__profile_photo, s.gender AS s__gender, s.culture AS s__culture, s.country AS s__country, s.way AS s__way, s.additional_address AS s__additional_address, s.zip_code AS s__zip_code, s.city AS s__city, s.date_of_birth AS s__date_of_birth, s.phone_number AS s__phone_number, s.film_prefere_1 AS s__film_prefere_1, s.film_prefere_2 AS s__film_prefere_2, s.film_prefere_3 AS s__film_prefere_3, s.artiste_prefere_1 AS s__artiste_prefere_1, s.artiste_prefere_2 AS s__artiste_prefere_2, s.artiste_prefere_3 AS s__artiste_prefere_3, s.genre_prefere_1 AS s__genre_prefere_1, s.genre_prefere_2 AS s__genre_prefere_2, s.genre_prefere_3 AS s__genre_prefere_3, s.size_of_storage_space AS s__size_of_storage_space, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.type = 1) - ()
+nov. 12 19:59:24 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/deevonaute/templates/indexSuccess.php"
+nov. 12 19:59:24 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 12 19:59:24 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 12 19:59:24 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov. 12 19:59:24 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 12 19:59:24 symfony [info] {sfWebDebugLogger} Configuration 26.06 ms (9)
+nov. 12 19:59:24 symfony [info] {sfWebDebugLogger} Factories 100.57 ms (1)
+nov. 12 19:59:24 symfony [info] {sfWebDebugLogger} Action "deevonaute/index" 112.90 ms (1)
+nov. 12 19:59:24 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.04 ms (2)
+nov. 12 19:59:24 symfony [info] {sfWebDebugLogger} View "Success" for "deevonaute/index" 29.69 ms (1)
+nov. 12 19:59:25 symfony [info] {sfWebResponse} Send content (37711 o)
+nov. 12 19:59:29 symfony [info] {sfPatternRouting} Match route "default" (/:module/:action/*) for /deevonaute/new with parameters array (  'module' => 'deevonaute',  'action' => 'new',)
+nov. 12 19:59:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 12 19:59:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 12 19:59:29 symfony [info] {deevonauteActions} Call "deevonauteActions->executeNew()"
+nov. 12 19:59:29 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/deevonaute/templates/newSuccess.php"
+nov. 12 19:59:29 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/deevonaute/templates/_form.php"
+nov. 12 19:59:30 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov. 12 19:59:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_group s - ()
+nov. 12 19:59:30 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_permission s - ()
+nov. 12 19:59:30 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 12 19:59:30 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 12 19:59:30 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov. 12 19:59:30 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 12 19:59:30 symfony [info] {sfWebDebugLogger} Configuration 25.52 ms (9)
+nov. 12 19:59:30 symfony [info] {sfWebDebugLogger} Factories 92.85 ms (1)
+nov. 12 19:59:30 symfony [info] {sfWebDebugLogger} Action "deevonaute/new" 184.34 ms (1)
+nov. 12 19:59:30 symfony [info] {sfWebDebugLogger} View "Success" for "deevonaute/new" 336.38 ms (1)
+nov. 12 19:59:30 symfony [info] {sfWebDebugLogger} Partial "deevonaute/_form" 296.67 ms (1)
+nov. 12 19:59:30 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.06 ms (3)
+nov. 12 19:59:30 symfony [info] {sfWebResponse} Send content (74106 o)
+nov. 12 19:59:36 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /deevonaute with parameters array (  'module' => 'deevonaute',  'action' => 'index',)
+nov. 12 19:59:36 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 12 19:59:36 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 12 19:59:36 symfony [info] {deevonauteActions} Call "deevonauteActions->executeIndex()"
+nov. 12 19:59:36 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov. 12 19:59:36 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.type AS s__type, s.profile_photo AS s__profile_photo, s.gender AS s__gender, s.culture AS s__culture, s.country AS s__country, s.way AS s__way, s.additional_address AS s__additional_address, s.zip_code AS s__zip_code, s.city AS s__city, s.date_of_birth AS s__date_of_birth, s.phone_number AS s__phone_number, s.film_prefere_1 AS s__film_prefere_1, s.film_prefere_2 AS s__film_prefere_2, s.film_prefere_3 AS s__film_prefere_3, s.artiste_prefere_1 AS s__artiste_prefere_1, s.artiste_prefere_2 AS s__artiste_prefere_2, s.artiste_prefere_3 AS s__artiste_prefere_3, s.genre_prefere_1 AS s__genre_prefere_1, s.genre_prefere_2 AS s__genre_prefere_2, s.genre_prefere_3 AS s__genre_prefere_3, s.size_of_storage_space AS s__size_of_storage_space, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.type = 1) - ()
+nov. 12 19:59:36 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/deevonaute/templates/indexSuccess.php"
+nov. 12 19:59:36 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 12 19:59:36 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 12 19:59:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov. 12 19:59:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 12 19:59:36 symfony [info] {sfWebDebugLogger} Configuration 27.51 ms (9)
+nov. 12 19:59:36 symfony [info] {sfWebDebugLogger} Factories 97.15 ms (1)
+nov. 12 19:59:36 symfony [info] {sfWebDebugLogger} Action "deevonaute/index" 112.73 ms (1)
+nov. 12 19:59:36 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+nov. 12 19:59:36 symfony [info] {sfWebDebugLogger} View "Success" for "deevonaute/index" 33.59 ms (1)
+nov. 12 19:59:36 symfony [info] {sfWebResponse} Send content (37710 o)
+nov. 12 20:01:58 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /sfGuardUser with parameters array (  'module' => 'sfGuardUser',  'action' => 'index',)
+nov. 12 20:01:59 symfony [err] {sfConfigurationException} The module "sfGuardUser" is not enabled.
+nov. 12 20:01:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+nov. 12 20:01:59 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 12 20:01:59 symfony [info] {sfWebDebugLogger} Configuration 594.87 ms (8)
+nov. 12 20:01:59 symfony [info] {sfWebDebugLogger} Factories 90.42 ms (1)
+nov. 12 20:02:07 symfony [info] {sfPatternRouting} Match route "default_index" (/:module) for /deevonaute with parameters array (  'module' => 'deevonaute',  'action' => 'index',)
+nov. 12 20:02:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 12 20:02:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 12 20:02:07 symfony [info] {deevonauteActions} Call "deevonauteActions->executeIndex()"
+nov. 12 20:02:07 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov. 12 20:02:07 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.first_name AS s__first_name, s.last_name AS s__last_name, s.email_address AS s__email_address, s.username AS s__username, s.algorithm AS s__algorithm, s.salt AS s__salt, s.password AS s__password, s.is_active AS s__is_active, s.is_super_admin AS s__is_super_admin, s.last_login AS s__last_login, s.type AS s__type, s.profile_photo AS s__profile_photo, s.gender AS s__gender, s.culture AS s__culture, s.country AS s__country, s.way AS s__way, s.additional_address AS s__additional_address, s.zip_code AS s__zip_code, s.city AS s__city, s.date_of_birth AS s__date_of_birth, s.phone_number AS s__phone_number, s.film_prefere_1 AS s__film_prefere_1, s.film_prefere_2 AS s__film_prefere_2, s.film_prefere_3 AS s__film_prefere_3, s.artiste_prefere_1 AS s__artiste_prefere_1, s.artiste_prefere_2 AS s__artiste_prefere_2, s.artiste_prefere_3 AS s__artiste_prefere_3, s.genre_prefere_1 AS s__genre_prefere_1, s.genre_prefere_2 AS s__genre_prefere_2, s.genre_prefere_3 AS s__genre_prefere_3, s.size_of_storage_space AS s__size_of_storage_space, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_user s WHERE (s.type = 1) - ()
+nov. 12 20:02:07 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/deevonaute/templates/indexSuccess.php"
+nov. 12 20:02:07 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 12 20:02:07 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 12 20:02:07 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov. 12 20:02:07 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 12 20:02:07 symfony [info] {sfWebDebugLogger} Configuration 27.78 ms (9)
+nov. 12 20:02:07 symfony [info] {sfWebDebugLogger} Factories 149.46 ms (1)
+nov. 12 20:02:07 symfony [info] {sfWebDebugLogger} Action "deevonaute/index" 129.00 ms (1)
+nov. 12 20:02:07 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (2)
+nov. 12 20:02:07 symfony [info] {sfWebDebugLogger} View "Success" for "deevonaute/index" 37.66 ms (1)
+nov. 12 20:02:08 symfony [info] {sfWebResponse} Send content (37711 o)
+nov. 12 21:22:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+nov. 12 21:22:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+nov. 12 21:22:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+nov. 12 21:22:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+nov. 12 21:22:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+nov. 12 21:22:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+nov. 12 21:22:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+nov. 12 21:22:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+nov. 12 21:22:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+nov. 12 21:22:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+nov. 12 21:22:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+nov. 12 21:22:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+nov. 12 21:22:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+nov. 12 21:22:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+nov. 12 21:22:39 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+nov. 12 21:22:39 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+nov. 12 21:22:39 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+nov. 12 21:22:39 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 12 21:22:39 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+nov. 12 21:22:39 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 12 21:22:39 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+nov. 12 21:22:39 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\lib\vendor\symfony\lib/controller/default/templates/indexSuccess.php"
+nov. 12 21:22:39 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+nov. 12 21:22:39 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+nov. 12 21:22:39 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov. 12 21:22:39 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 12 21:22:39 symfony [info] {sfWebDebugLogger} Configuration 287.96 ms (9)
+nov. 12 21:22:39 symfony [info] {sfWebDebugLogger} Factories 363.49 ms (1)
+nov. 12 21:22:39 symfony [info] {sfWebDebugLogger} Action "default/index" 0.66 ms (1)
+nov. 12 21:22:39 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 39.07 ms (1)
+nov. 12 21:22:40 symfony [info] {sfWebResponse} Send content (38361 o)
+nov. 12 21:23:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+nov. 12 21:23:08 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+nov. 12 21:23:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+nov. 12 21:23:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+nov. 12 21:23:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+nov. 12 21:23:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+nov. 12 21:23:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+nov. 12 21:23:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+nov. 12 21:23:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+nov. 12 21:23:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+nov. 12 21:23:08 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+nov. 12 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+nov. 12 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+nov. 12 21:23:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+nov. 12 21:23:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+nov. 12 21:23:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+nov. 12 21:23:09 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+nov. 12 21:23:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 12 21:23:09 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+nov. 12 21:23:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 12 21:23:09 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+nov. 12 21:23:09 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\lib\vendor\symfony\lib/controller/default/templates/indexSuccess.php"
+nov. 12 21:23:09 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+nov. 12 21:23:09 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+nov. 12 21:23:09 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov. 12 21:23:09 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 12 21:23:09 symfony [info] {sfWebDebugLogger} Configuration 73.22 ms (9)
+nov. 12 21:23:09 symfony [info] {sfWebDebugLogger} Factories 151.04 ms (1)
+nov. 12 21:23:09 symfony [info] {sfWebDebugLogger} Action "default/index" 0.58 ms (1)
+nov. 12 21:23:09 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 41.88 ms (1)
+nov. 12 21:23:09 symfony [info] {sfWebResponse} Send content (38360 o)

@@ -1,0 +1,62 @@
+# # Populate this file with data to be loaded by your ORM's *:data-load task.
+# # You can create multiple files in this directory (i.e. 010_users.yml,
+# # 020_articles.yml, etc) which will be loaded in alphabetical order.
+# # 
+# # See documentation for your ORM's *:data-load task for more information.
+# 
+# User:
+  # fabien:
+    # username: fabien
+    # password: changeme
+    # name:     Fabien Potencier
+    # email:    fabien.potencier@symfony-project.com
+  # kris:
+    # username: Kris.Wallsmith
+    # password: changeme
+    # name:     Kris Wallsmith
+    # email:    kris.wallsmith@symfony-project.com
+# sfGuardUserProfile:
+  # Deevonaute1:
+    # first_name:          Maria
+    # last_name:           CROSS
+    # email_new:       vincentrooy@yahoo.fr
+    # username:            vincentrooy
+    # algorithm:
+    # salt:
+    # password:            saturne
+    # is_active:           true
+    # is_super_admin:      false
+    # last_login:
+    # type:                artiste
+    # profile_photo:		 F_Default.gif
+    # gender:              'Female'
+    # culture:             fr
+    # country:             Ishvalah
+    # way:                 rue
+    # additional_address:  'porte de verite'
+    # zip_code:            '54121'
+    # city:                Ishval
+    # date_of_birth:       12/01/1999
+    # phone_number:        '0123456789'
+  # Deevonaute2:
+    # first_name:          Rooy
+    # last_name:           MUSTANG
+    # email_new:       vincentrooy@yahoo.com
+    # username:            Mustang
+    # algorithm:
+    # salt:
+    # password:            saturne
+    # is_active:           true
+    # is_super_admin:      false
+    # last_login:
+    # type:                artiste
+    # profile_photo:		 F_Default.gif
+    # gender:              'Male'
+    # culture:             fr
+    # country:             Ishvalah
+    # way:                 rue
+    # additional_address:  Eden'
+    # zip_code:            '22222'
+    # city:                Ishval
+    # date_of_birth:       12/01/1899
+    # phone_number:        '2123456789'

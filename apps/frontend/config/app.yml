@@ -1,0 +1,48 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/11-App
+
+# default values
+all:
+sf_guard_plugin:
+  remember_key_expiration_age:  2592000   # 30 days in seconds
+  remember_cookie_name:         deevoxRememberMe
+
+# sf_guard_plugin:
+  # success_signin_url:      @my_route?param=value # the plugin uses the referer as default
+  # success_signout_url:     module/action         # the plugin uses the referer as default
+
+  # recaptcha:
+    # enabled:        true
+    # public_key:     YOUR_PUBLIC_reCAPTCHA_KEY
+    # private_key:    YOUR_PRIVATE_reCAPTCHA_KEY
+
+sfForkedApply:
+  from:
+    email: "your@emailaddress.com"
+    fullname: "the staff at deevox.com"
+  routes:
+    apply: /deevonaute/new
+    reset: /deevonaute/password-reset
+    resetRequest: /deevonaute/reset-request
+    resetCancel: /deevonaute/reset-cancel
+    validate: /deevonaute/confirm/:validate
+    settings: /deevonaute/settings
+  mail_editable: false
+
+  # afterLogin: after_login_route
+  # after: after_route
+
+  ###Custom forms###	
+  applyForm: sfApplyApplyForm
+  resetForm: sfApplyResetForm
+  resetRequestForm: sfApplyResetRequestForm
+  settingsForm: sfApplySettingsForm
+
+  # that section is as a fallback only
+sfApplyPlugin:
+  from:
+    email: "your@emailaddress.com"
+    fullname: "the staff at deevox.com"
+  # as a fallback we use old options too:
+  # afterLogin: after_login_route
+  # after: after_route

@@ -1,0 +1,61 @@
+Deevonaute:
+  connection: doctrine
+  tableName: deevonaute
+  inheritance: 
+    type: column_aggregation
+    keyField: type
+    keyValue: 1
+    extends: sfGuardUserProfile
+  columns:
+    profile_photo:
+      type: string(255)
+      notnull: false
+    gender:
+      type: string(10)
+      notnull: true
+    culture:
+      type: string(255)
+      default: 'fr'
+      notnull: true
+    country:
+      type: string(255)
+      notnull: true	 
+    way:
+      type: string(255)
+      notnull: true
+    additional_address:
+      type: string(255)
+      notnull: true
+    zip_code:
+      type: string(255)
+      notnull: true
+    city:
+      type: string(255)
+      notnull: true
+    date_of_birth:
+      type: date
+      notnull: true
+    phone_number:
+      type: integer(20)
+      notnull:              true
+    film_prefere_1:
+      type:                 string(100)
+    film_prefere_2:
+      type:                 string(100)
+    film_prefere_3:
+      type:                 string(100)
+    artiste_prefere_1:
+      type:                 string(100)
+    artiste_prefere_2:
+      type:                 string(100)
+    artiste_prefere_3:
+      type:                 string(100)
+    genre_prefere_1:
+      type:                 string(100)
+    genre_prefere_2:
+      type:                 string(100)
+    genre_prefere_3:
+      type:                 string(100)
+    size_of_storage_space:
+      type:                 integer
+      default:              0
