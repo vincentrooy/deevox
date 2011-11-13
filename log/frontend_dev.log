@@ -230,3 +230,585 @@ nov. 12 21:23:09 symfony [info] {sfWebDebugLogger} Factories 151.04 ms (1)
 nov. 12 21:23:09 symfony [info] {sfWebDebugLogger} Action "default/index" 0.58 ms (1)
 nov. 12 21:23:09 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 41.88 ms (1)
 nov. 12 21:23:09 symfony [info] {sfWebResponse} Send content (38360 o)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfRoute "apply" (/user/new)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfRoute "reset" (/user/password-reset)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfRoute "resetRequest" (/user/reset-request)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfRoute "resetCancel" (/user/reset-cancel)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfRoute "validate" (/user/confirm/:validate)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Connect sfRoute "settings" (/user/settings)
+nov. 13 01:36:20 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'default',  'action' => 'index',)
+nov. 13 01:36:20 symfony [info] {myUser} Automatic user logout due to timeout
+nov. 13 01:36:20 symfony [info] {myUser} User is not authenticated
+nov. 13 01:36:20 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 13 01:36:20 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+nov. 13 01:36:20 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 13 01:36:20 symfony [info] {defaultActions} Call "defaultActions->executeIndex()"
+nov. 13 01:36:20 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\lib\vendor\symfony\lib/controller/default/templates/indexSuccess.php"
+nov. 13 01:36:20 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+nov. 13 01:36:20 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\lib\vendor\symfony\lib\controller\default\templates/defaultLayout.php"
+nov. 13 01:36:20 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov. 13 01:36:20 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 13 01:36:20 symfony [info] {sfWebDebugLogger} Configuration 1152.01 ms (9)
+nov. 13 01:36:20 symfony [info] {sfWebDebugLogger} Factories 705.82 ms (1)
+nov. 13 01:36:20 symfony [info] {sfWebDebugLogger} Action "default/index" 0.59 ms (1)
+nov. 13 01:36:20 symfony [info] {sfWebDebugLogger} View "Success" for "default/index" 78.05 ms (1)
+nov. 13 01:36:21 symfony [info] {sfWebResponse} Send content (42164 o)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfRoute "apply" (/user/new)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfRoute "reset" (/user/password-reset)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfRoute "resetRequest" (/user/reset-request)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfRoute "resetCancel" (/user/reset-cancel)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfRoute "validate" (/user/confirm/:validate)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Connect sfRoute "settings" (/user/settings)
+nov. 13 01:40:38 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+nov. 13 01:40:38 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 13 01:40:38 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+nov. 13 01:40:38 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 13 01:40:38 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+nov. 13 01:40:38 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/main/templates/indexSuccess.php"
+nov. 13 01:40:38 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 01:40:38 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfRoute "apply" (/user/new)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfRoute "reset" (/user/password-reset)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfRoute "resetRequest" (/user/reset-request)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfRoute "resetCancel" (/user/reset-cancel)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfRoute "validate" (/user/confirm/:validate)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Connect sfRoute "settings" (/user/settings)
+nov. 13 01:43:00 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+nov. 13 01:43:00 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 13 01:43:00 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+nov. 13 01:43:00 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 13 01:43:00 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+nov. 13 01:43:00 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/main/templates/indexSuccess.php"
+nov. 13 01:43:00 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 01:43:00 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 01:57:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+nov. 13 01:57:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+nov. 13 01:57:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+nov. 13 01:57:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+nov. 13 01:57:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+nov. 13 01:57:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+nov. 13 01:57:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+nov. 13 01:57:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+nov. 13 01:57:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+nov. 13 01:57:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+nov. 13 01:57:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+nov. 13 01:57:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+nov. 13 01:57:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+nov. 13 01:57:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+nov. 13 01:57:09 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+nov. 13 01:57:09 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+nov. 13 01:57:09 symfony [info] {sfPatternRouting} Connect sfRoute "apply" (/user/new)
+nov. 13 01:57:09 symfony [info] {sfPatternRouting} Connect sfRoute "reset" (/user/password-reset)
+nov. 13 01:57:10 symfony [info] {sfPatternRouting} Connect sfRoute "resetRequest" (/user/reset-request)
+nov. 13 01:57:10 symfony [info] {sfPatternRouting} Connect sfRoute "resetCancel" (/user/reset-cancel)
+nov. 13 01:57:10 symfony [info] {sfPatternRouting} Connect sfRoute "validate" (/user/confirm/:validate)
+nov. 13 01:57:10 symfony [info] {sfPatternRouting} Connect sfRoute "settings" (/user/settings)
+nov. 13 01:57:10 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+nov. 13 01:57:10 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 13 01:57:10 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+nov. 13 01:57:10 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 13 01:57:10 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+nov. 13 01:57:10 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/main/templates/indexSuccess.php"
+nov. 13 01:57:10 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 01:57:10 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 01:57:10 symfony [err] {sfRenderException} The template "_moduleChoixLangues.php" does not exist or is unreadable in "".
+nov. 13 01:57:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+nov. 13 01:57:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 13 01:57:10 symfony [info] {sfWebDebugLogger} Configuration 972.69 ms (9)
+nov. 13 01:57:10 symfony [info] {sfWebDebugLogger} Factories 459.91 ms (1)
+nov. 13 01:57:10 symfony [info] {sfWebDebugLogger} Action "main/index" 0.44 ms (1)
+nov. 13 01:57:10 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 148.92 ms (1)
+nov. 13 01:57:10 symfony [info] {sfWebDebugLogger} Partial "language/_moduleChoixLangues" 94.13 ms (1)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "apply" (/user/new)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "reset" (/user/password-reset)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "resetRequest" (/user/reset-request)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "resetCancel" (/user/reset-cancel)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "validate" (/user/confirm/:validate)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Connect sfRoute "settings" (/user/settings)
+nov. 13 01:59:46 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+nov. 13 01:59:46 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 13 01:59:46 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+nov. 13 01:59:46 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 13 01:59:46 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+nov. 13 01:59:46 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/main/templates/indexSuccess.php"
+nov. 13 01:59:46 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 01:59:46 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 01:59:46 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/langue/templates/_moduleChoixLangues.php"
+nov. 13 01:59:46 symfony [err] {sfConfigurationException} The route "change_language" does not exist.
+nov. 13 01:59:46 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+nov. 13 01:59:46 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 13 01:59:46 symfony [info] {sfWebDebugLogger} Configuration 24.61 ms (9)
+nov. 13 01:59:46 symfony [info] {sfWebDebugLogger} Factories 208.98 ms (1)
+nov. 13 01:59:46 symfony [info] {sfWebDebugLogger} Action "main/index" 0.45 ms (1)
+nov. 13 01:59:46 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 164.54 ms (1)
+nov. 13 01:59:46 symfony [info] {sfWebDebugLogger} Partial "langue/_moduleChoixLangues" 120.17 ms (1)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfRoute "apply" (/user/new)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfRoute "reset" (/user/password-reset)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfRoute "resetRequest" (/user/reset-request)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfRoute "resetCancel" (/user/reset-cancel)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfRoute "validate" (/user/confirm/:validate)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Connect sfRoute "settings" (/user/settings)
+nov. 13 02:01:29 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+nov. 13 02:01:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 13 02:01:29 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+nov. 13 02:01:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 13 02:01:29 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+nov. 13 02:01:29 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/main/templates/indexSuccess.php"
+nov. 13 02:01:29 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:01:29 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:01:29 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/langue/templates/_moduleChoixLangues.php"
+nov. 13 02:01:29 symfony [err] {sfRenderException} The template "_moduleConnexionDeconnexion.php" does not exist or is unreadable in "".
+nov. 13 02:01:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+nov. 13 02:01:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 13 02:01:29 symfony [info] {sfWebDebugLogger} Configuration 23.30 ms (9)
+nov. 13 02:01:29 symfony [info] {sfWebDebugLogger} Factories 206.62 ms (1)
+nov. 13 02:01:30 symfony [info] {sfWebDebugLogger} Action "main/index" 0.60 ms (1)
+nov. 13 02:01:30 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 207.09 ms (1)
+nov. 13 02:01:30 symfony [info] {sfWebDebugLogger} Partial "langue/_moduleChoixLangues" 4.63 ms (1)
+nov. 13 02:01:30 symfony [info] {sfWebDebugLogger} Partial "global/_moduleConnexionDeconnexion" 150.12 ms (1)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfRoute "apply" (/user/new)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfRoute "reset" (/user/password-reset)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfRoute "resetRequest" (/user/reset-request)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfRoute "resetCancel" (/user/reset-cancel)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfRoute "validate" (/user/confirm/:validate)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Connect sfRoute "settings" (/user/settings)
+nov. 13 02:02:35 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+nov. 13 02:02:35 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 13 02:02:35 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+nov. 13 02:02:35 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 13 02:02:35 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+nov. 13 02:02:36 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/main/templates/indexSuccess.php"
+nov. 13 02:02:36 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:02:36 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:02:36 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/langue/templates/_moduleChoixLangues.php"
+nov. 13 02:02:36 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/_moduleConnexionDeconnexion.php"
+nov. 13 02:02:36 symfony [err] {sfConfigurationException} The route "Incription_deevonaute" does not exist.
+nov. 13 02:02:36 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+nov. 13 02:02:36 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 13 02:02:36 symfony [info] {sfWebDebugLogger} Configuration 24.61 ms (9)
+nov. 13 02:02:36 symfony [info] {sfWebDebugLogger} Factories 203.53 ms (1)
+nov. 13 02:02:36 symfony [info] {sfWebDebugLogger} Action "main/index" 0.59 ms (1)
+nov. 13 02:02:36 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 256.25 ms (1)
+nov. 13 02:02:36 symfony [info] {sfWebDebugLogger} Partial "langue/_moduleChoixLangues" 5.23 ms (1)
+nov. 13 02:02:36 symfony [info] {sfWebDebugLogger} Partial "global/_moduleConnexionDeconnexion" 193.77 ms (1)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfRoute "apply" (/user/new)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfRoute "reset" (/user/password-reset)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfRoute "resetRequest" (/user/reset-request)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfRoute "resetCancel" (/user/reset-cancel)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfRoute "validate" (/user/confirm/:validate)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Connect sfRoute "settings" (/user/settings)
+nov. 13 02:06:02 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+nov. 13 02:06:02 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 13 02:06:02 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+nov. 13 02:06:02 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 13 02:06:02 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+nov. 13 02:06:02 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/main/templates/indexSuccess.php"
+nov. 13 02:06:02 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:06:02 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:06:02 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/langue/templates/_moduleChoixLangues.php"
+nov. 13 02:06:02 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/_moduleConnexionDeconnexion.php"
+nov. 13 02:06:02 symfony [err] {sfConfigurationException} The route "Incription_deevonaute" does not exist.
+nov. 13 02:06:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+nov. 13 02:06:02 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 13 02:06:02 symfony [info] {sfWebDebugLogger} Configuration 318.37 ms (10)
+nov. 13 02:06:02 symfony [info] {sfWebDebugLogger} Factories 472.56 ms (1)
+nov. 13 02:06:02 symfony [info] {sfWebDebugLogger} Action "main/index" 0.61 ms (1)
+nov. 13 02:06:02 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 225.44 ms (1)
+nov. 13 02:06:02 symfony [info] {sfWebDebugLogger} Partial "langue/_moduleChoixLangues" 4.77 ms (1)
+nov. 13 02:06:02 symfony [info] {sfWebDebugLogger} Partial "global/_moduleConnexionDeconnexion" 159.91 ms (1)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfRoute "apply" (/user/new)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfRoute "reset" (/user/password-reset)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfRoute "resetRequest" (/user/reset-request)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfRoute "resetCancel" (/user/reset-cancel)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfRoute "validate" (/user/confirm/:validate)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Connect sfRoute "settings" (/user/settings)
+nov. 13 02:06:18 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+nov. 13 02:06:18 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 13 02:06:18 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+nov. 13 02:06:18 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 13 02:06:18 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+nov. 13 02:06:18 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/main/templates/indexSuccess.php"
+nov. 13 02:06:18 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:06:18 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:06:18 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/langue/templates/_moduleChoixLangues.php"
+nov. 13 02:06:18 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/_moduleConnexionDeconnexion.php"
+nov. 13 02:06:18 symfony [err] {sfConfigurationException} The route "incription_deevonaute" does not exist.
+nov. 13 02:06:18 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+nov. 13 02:06:18 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 13 02:06:18 symfony [info] {sfWebDebugLogger} Configuration 31.44 ms (9)
+nov. 13 02:06:18 symfony [info] {sfWebDebugLogger} Factories 189.17 ms (1)
+nov. 13 02:06:18 symfony [info] {sfWebDebugLogger} Action "main/index" 0.66 ms (1)
+nov. 13 02:06:18 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 211.65 ms (1)
+nov. 13 02:06:18 symfony [info] {sfWebDebugLogger} Partial "langue/_moduleChoixLangues" 4.23 ms (1)
+nov. 13 02:06:18 symfony [info] {sfWebDebugLogger} Partial "global/_moduleConnexionDeconnexion" 151.70 ms (1)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfRoute "apply" (/user/new)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfRoute "reset" (/user/password-reset)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfRoute "resetRequest" (/user/reset-request)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfRoute "resetCancel" (/user/reset-cancel)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfRoute "validate" (/user/confirm/:validate)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Connect sfRoute "settings" (/user/settings)
+nov. 13 02:06:29 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+nov. 13 02:06:29 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 13 02:06:29 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+nov. 13 02:06:29 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 13 02:06:29 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+nov. 13 02:06:29 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/main/templates/indexSuccess.php"
+nov. 13 02:06:29 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:06:29 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:06:29 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/langue/templates/_moduleChoixLangues.php"
+nov. 13 02:06:29 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/_moduleConnexionDeconnexion.php"
+nov. 13 02:06:29 symfony [err] {sfRenderException} The template "_recherche.php" does not exist or is unreadable in "".
+nov. 13 02:06:29 symfony [info] {sfWebResponse} Send status "HTTP/1.1 500 Internal Server Error"
+nov. 13 02:06:29 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 13 02:06:29 symfony [info] {sfWebDebugLogger} Configuration 19.53 ms (9)
+nov. 13 02:06:29 symfony [info] {sfWebDebugLogger} Factories 144.35 ms (1)
+nov. 13 02:06:29 symfony [info] {sfWebDebugLogger} Action "main/index" 0.44 ms (1)
+nov. 13 02:06:29 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 148.92 ms (1)
+nov. 13 02:06:29 symfony [info] {sfWebDebugLogger} Partial "langue/_moduleChoixLangues" 3.50 ms (1)
+nov. 13 02:06:29 symfony [info] {sfWebDebugLogger} Partial "global/_moduleConnexionDeconnexion" 3.22 ms (1)
+nov. 13 02:06:29 symfony [info] {sfWebDebugLogger} Partial "recherche/_recherche" 99.30 ms (1)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfRoute "apply" (/user/new)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfRoute "reset" (/user/password-reset)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfRoute "resetRequest" (/user/reset-request)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfRoute "resetCancel" (/user/reset-cancel)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfRoute "validate" (/user/confirm/:validate)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Connect sfRoute "settings" (/user/settings)
+nov. 13 02:08:34 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+nov. 13 02:08:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 13 02:08:34 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+nov. 13 02:08:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 13 02:08:34 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+nov. 13 02:08:34 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/main/templates/indexSuccess.php"
+nov. 13 02:08:34 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:08:34 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:08:34 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/langue/templates/_moduleChoixLangues.php"
+nov. 13 02:08:34 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/_moduleConnexionDeconnexion.php"
+nov. 13 02:08:34 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/recherche/templates/_recherche.php"
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfRoute "apply" (/user/new)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfRoute "reset" (/user/password-reset)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfRoute "resetRequest" (/user/reset-request)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfRoute "resetCancel" (/user/reset-cancel)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfRoute "validate" (/user/confirm/:validate)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Connect sfRoute "settings" (/user/settings)
+nov. 13 02:09:01 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+nov. 13 02:09:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 13 02:09:01 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+nov. 13 02:09:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 13 02:09:01 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+nov. 13 02:09:01 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/main/templates/indexSuccess.php"
+nov. 13 02:09:01 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:09:01 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:09:01 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/langue/templates/_moduleChoixLangues.php"
+nov. 13 02:09:01 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/_moduleConnexionDeconnexion.php"
+nov. 13 02:09:01 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/recherche/templates/_recherche.php"
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfRoute "apply" (/user/new)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfRoute "reset" (/user/password-reset)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfRoute "resetRequest" (/user/reset-request)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfRoute "resetCancel" (/user/reset-cancel)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfRoute "validate" (/user/confirm/:validate)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Connect sfRoute "settings" (/user/settings)
+nov. 13 02:11:53 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+nov. 13 02:11:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 13 02:11:53 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+nov. 13 02:11:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 13 02:11:53 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+nov. 13 02:11:53 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/main/templates/indexSuccess.php"
+nov. 13 02:11:53 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:11:53 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:11:53 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/langue/templates/_moduleChoixLangues.php"
+nov. 13 02:11:53 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/_moduleConnexionDeconnexion.php"
+nov. 13 02:11:53 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/recherche/templates/_recherche.php"
+nov. 13 02:11:53 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov. 13 02:11:53 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 13 02:11:53 symfony [info] {sfWebDebugLogger} Configuration 26.41 ms (9)
+nov. 13 02:11:53 symfony [info] {sfWebDebugLogger} Factories 196.96 ms (1)
+nov. 13 02:11:53 symfony [info] {sfWebDebugLogger} Action "main/index" 0.67 ms (1)
+nov. 13 02:11:53 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 85.23 ms (1)
+nov. 13 02:11:53 symfony [info] {sfWebDebugLogger} Partial "langue/_moduleChoixLangues" 4.57 ms (1)
+nov. 13 02:11:53 symfony [info] {sfWebDebugLogger} Partial "global/_moduleConnexionDeconnexion" 6.95 ms (1)
+nov. 13 02:11:53 symfony [info] {sfWebDebugLogger} Partial "recherche/_recherche" 3.68 ms (1)
+nov. 13 02:11:53 symfony [info] {sfWebResponse} Send content (45643 o)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfRoute "apply" (/user/new)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfRoute "reset" (/user/password-reset)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfRoute "resetRequest" (/user/reset-request)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfRoute "resetCancel" (/user/reset-cancel)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfRoute "validate" (/user/confirm/:validate)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Connect sfRoute "settings" (/user/settings)
+nov. 13 02:13:30 symfony [info] {sfPatternRouting} Match route "inscription_deevonaute" (/deevonaute/new) for /deevonaute/new with parameters array (  'module' => 'deevonaute',  'action' => 'new',)
+nov. 13 02:13:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 13 02:13:30 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+nov. 13 02:13:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 13 02:13:30 symfony [info] {deevonauteActions} Call "deevonauteActions->executeNew()"
+nov. 13 02:13:31 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/deevonaute/templates/newSuccess.php"
+nov. 13 02:13:31 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/deevonaute/templates/_form.php"
+nov. 13 02:13:31 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+nov. 13 02:13:31 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_group s - ()
+nov. 13 02:13:31 symfony [info] {Doctrine_Connection_Mysql} query : SELECT s.id AS s__id, s.name AS s__name, s.description AS s__description, s.created_at AS s__created_at, s.updated_at AS s__updated_at FROM sf_guard_permission s - ()
+nov. 13 02:13:31 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:13:31 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:13:31 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/langue/templates/_moduleChoixLangues.php"
+nov. 13 02:13:31 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/_moduleConnexionDeconnexion.php"
+nov. 13 02:13:31 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/recherche/templates/_recherche.php"
+nov. 13 02:13:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov. 13 02:13:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 13 02:13:31 symfony [info] {sfWebDebugLogger} Configuration 163.33 ms (12)
+nov. 13 02:13:31 symfony [info] {sfWebDebugLogger} Factories 204.12 ms (1)
+nov. 13 02:13:31 symfony [info] {sfWebDebugLogger} Action "deevonaute/new" 148.31 ms (1)
+nov. 13 02:13:31 symfony [info] {sfWebDebugLogger} View "Success" for "deevonaute/new" 288.23 ms (1)
+nov. 13 02:13:31 symfony [info] {sfWebDebugLogger} Partial "deevonaute/_form" 203.30 ms (1)
+nov. 13 02:13:31 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.05 ms (3)
+nov. 13 02:13:31 symfony [info] {sfWebDebugLogger} Partial "langue/_moduleChoixLangues" 2.56 ms (1)
+nov. 13 02:13:31 symfony [info] {sfWebDebugLogger} Partial "global/_moduleConnexionDeconnexion" 2.94 ms (1)
+nov. 13 02:13:31 symfony [info] {sfWebDebugLogger} Partial "recherche/_recherche" 2.86 ms (1)
+nov. 13 02:13:31 symfony [info] {sfWebResponse} Send content (76479 o)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signin" (/guard/login)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_signout" (/guard/logout)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_filter" (/guard/users/filter.:sf_format)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_batch" (/guard/users/batch.:sf_format)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user" (/guard/users.:sf_format)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_new" (/guard/users/new.:sf_format)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_create" (/guard/users.:sf_format)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_edit" (/guard/users/:id/edit.:sf_format)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_update" (/guard/users/:id.:sf_format)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_delete" (/guard/users/:id.:sf_format)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_show" (/guard/users/:id.:sf_format)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_object" (/guard/users/:id/:action.:sf_format)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_user_collection" (/guard/users/:action/action.:sf_format)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_register" (/guard/register)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfRoute "sf_guard_forgot_password" (/guard/forgot_password)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfDoctrineRoute "sf_guard_forgot_password_change" (/guard/forgot_password/:unique_key)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfRoute "apply" (/user/new)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfRoute "reset" (/user/password-reset)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfRoute "resetRequest" (/user/reset-request)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfRoute "resetCancel" (/user/reset-cancel)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfRoute "validate" (/user/confirm/:validate)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Connect sfRoute "settings" (/user/settings)
+nov. 13 02:15:33 symfony [info] {sfPatternRouting} Match route "homepage" (/) for / with parameters array (  'module' => 'main',  'action' => 'index',)
+nov. 13 02:15:34 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+nov. 13 02:15:34 symfony [info] {sfFilterChain} Executing filter "sfGuardRememberMeFilter"
+nov. 13 02:15:34 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+nov. 13 02:15:34 symfony [info] {mainActions} Call "mainActions->executeIndex()"
+nov. 13 02:15:34 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/main/templates/indexSuccess.php"
+nov. 13 02:15:34 symfony [info] {sfPHPView} Decorate content with "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:15:34 symfony [info] {sfPHPView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/layout.php"
+nov. 13 02:15:34 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/langue/templates/_moduleChoixLangues.php"
+nov. 13 02:15:34 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\templates/_moduleConnexionDeconnexion.php"
+nov. 13 02:15:34 symfony [info] {sfPartialView} Render "C:\Users\Vincent Talla\deevox\apps\frontend\modules/recherche/templates/_recherche.php"
+nov. 13 02:15:34 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+nov. 13 02:15:34 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+nov. 13 02:15:34 symfony [info] {sfWebDebugLogger} Configuration 26.33 ms (9)
+nov. 13 02:15:34 symfony [info] {sfWebDebugLogger} Factories 234.72 ms (1)
+nov. 13 02:15:34 symfony [info] {sfWebDebugLogger} Action "main/index" 0.63 ms (1)
+nov. 13 02:15:34 symfony [info] {sfWebDebugLogger} View "Success" for "main/index" 63.97 ms (1)
+nov. 13 02:15:34 symfony [info] {sfWebDebugLogger} Partial "langue/_moduleChoixLangues" 2.69 ms (1)
+nov. 13 02:15:34 symfony [info] {sfWebDebugLogger} Partial "global/_moduleConnexionDeconnexion" 2.84 ms (1)
+nov. 13 02:15:34 symfony [info] {sfWebDebugLogger} Partial "recherche/_recherche" 2.38 ms (1)
+nov. 13 02:15:34 symfony [info] {sfWebResponse} Send content (45611 o)
