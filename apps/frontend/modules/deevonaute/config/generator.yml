@@ -1,0 +1,10 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    config:
+      form:
+        class: sfGuardUserAdminForm
+        display:
+          "Identifiant de connexion":       [username]
+          "Données personnelles":           [identifiant]
+          "Données Supplementaires":        [Divers]

@@ -44,3 +44,5 @@ all:
 
     #internationalisation
     i18n: true
+    default_culture:        en
+    standard_helpers:       [Partial, Cache, I18N]

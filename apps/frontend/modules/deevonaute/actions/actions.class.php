@@ -12,27 +12,27 @@ class deevonauteActions extends sfActions
 {
   public function executeIndex(sfWebRequest $request)
   {
-    $this->deevonautes = Doctrine_Core::getTable('deevonaute')
+    $this->sf_guard_users = Doctrine_Core::getTable('sfGuardUser')
       ->createQuery('a')
       ->execute();
   }
 
   public function executeShow(sfWebRequest $request)
   {
-    $this->deevonaute = Doctrine_Core::getTable('deevonaute')->find(array($request->getParameter('id')));
-    $this->forward404Unless($this->deevonaute);
+    $this->sf_guard_user = Doctrine_Core::getTable('sfGuardUser')->find(array($request->getParameter('id')));
+    $this->forward404Unless($this->sf_guard_user);
   }
 
   public function executeNew(sfWebRequest $request)
   {
-    $this->form = new deevonauteForm();
+    $this->form = new sfGuardUserForm();
   }
 
   public function executeCreate(sfWebRequest $request)
   {
     $this->forward404Unless($request->isMethod(sfRequest::POST));
 
-    $this->form = new deevonauteForm();
+    $this->form = new sfGuardUserForm();
 
     $this->processForm($request, $this->form);
 
@@ -41,15 +41,15 @@ class deevonauteActions extends sfActions
 
   public function executeEdit(sfWebRequest $request)
   {
-    $this->forward404Unless($deevonaute = Doctrine_Core::getTable('deevonaute')->find(array($request->getParameter('id'))), sprintf('Object deevonaute does not exist (%s).', $request->getParameter('id')));
-    $this->form = new deevonauteForm($deevonaute);
+    $this->forward404Unless($sf_guard_user = Doctrine_Core::getTable('sfGuardUser')->find(array($request->getParameter('id'))), sprintf('Object sf_guard_user does not exist (%s).', $request->getParameter('id')));
+    $this->form = new sfGuardUserForm($sf_guard_user);
   }
 
   public function executeUpdate(sfWebRequest $request)
   {
     $this->forward404Unless($request->isMethod(sfRequest::POST) || $request->isMethod(sfRequest::PUT));
-    $this->forward404Unless($deevonaute = Doctrine_Core::getTable('deevonaute')->find(array($request->getParameter('id'))), sprintf('Object deevonaute does not exist (%s).', $request->getParameter('id')));
-    $this->form = new deevonauteForm($deevonaute);
+    $this->forward404Unless($sf_guard_user = Doctrine_Core::getTable('sfGuardUser')->find(array($request->getParameter('id'))), sprintf('Object sf_guard_user does not exist (%s).', $request->getParameter('id')));
+    $this->form = new sfGuardUserForm($sf_guard_user);
 
     $this->processForm($request, $this->form);
 
@@ -60,8 +60,8 @@ class deevonauteActions extends sfActions
   {
     $request->checkCSRFProtection();
 
-    $this->forward404Unless($deevonaute = Doctrine_Core::getTable('deevonaute')->find(array($request->getParameter('id'))), sprintf('Object deevonaute does not exist (%s).', $request->getParameter('id')));
-    $deevonaute->delete();
+    $this->forward404Unless($sf_guard_user = Doctrine_Core::getTable('sfGuardUser')->find(array($request->getParameter('id'))), sprintf('Object sf_guard_user does not exist (%s).', $request->getParameter('id')));
+    $sf_guard_user->delete();
 
     $this->redirect('deevonaute/index');
   }
@@ -71,9 +71,9 @@ class deevonauteActions extends sfActions
     $form->bind($request->getParameter($form->getName()), $request->getFiles($form->getName()));
     if ($form->isValid())
     {
-      $deevonaute = $form->save();
+      $sf_guard_user = $form->save();
 
-      $this->redirect('deevonaute/edit?id='.$deevonaute->getId());
+      $this->redirect('deevonaute/edit?id='.$sf_guard_user->getId());
     }
   }
 }

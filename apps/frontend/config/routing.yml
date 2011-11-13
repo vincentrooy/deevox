@@ -4,7 +4,11 @@
 # default rules
 homepage:
   url:   /
-  param: { module: default, action: index }
+  param: { module: main, action: index }
+ 
+inscription_deevonaute:
+  url: deevonaute/new
+  param: {module: deevonaute, action: new}
 
 # generic rules
 sf_guard_signin:

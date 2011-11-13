@@ -1,0 +1,18 @@
+
+# delete:
+ # credentials:  [Ecriture]
+
+# show:
+ # credentials:  [Lecture]
+
+# edit:
+ # credentials:  [Lecture]
+
+# update:
+ # credentials:  [Lecture]
+
+# default:
+ # is_secure:   on
+ # credentials: [Ecritue]
+ 
+ 
