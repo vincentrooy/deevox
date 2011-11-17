@@ -1,0 +1,91 @@
+tdBlogPlugin
+============
+
+The `tdBlogPlugin` provides basic blog functionalties.
+
+This plugin is a part of __TD CMF__ and is based on __Doctrine ORM__.
+
+Installation
+============
+
+Install the plugin via the subversion repository by executing the following
+command from the project root directory:
+
+    $ svn co http://svn.symfony-project.com/plugins/tdBlogPlugin/trunk plugins/tdBlogPlugin
+
+or by using the default symfony plugin install command:
+
+    $ ./symfony plugin:install -s beta tdBlogPlugin
+
+as the actual release is in its beta stage.
+
+Usage
+=====
+
+  * Enable the __tdSampleArticle__ module in your frontend application's
+    _config/settings.yml_ enabled_modules section:
+
+        [php]
+        enabled_modules: [ ..., tdSampleArticle ]
+
+  * Fixtures are provided with the plugin - randomly generated data. Run the
+    following commands:
+
+        $ ./symfony doctrine:build --all
+
+    and
+
+        $ ./symfony doctrine:data-load
+
+    Now you have to create a directory for video uploads:
+
+        $ mkdir web/uploads/td/blog
+
+    and make it writeable:
+
+        $ chmod 777 web/uploads/td/blog
+
+    Now you have to copy the sample.jpg file from _tdBlogPlugin/data/samples_
+    to the blog upload directory created above. Everything is ready to run the
+    following URL in your browser:
+
+        http://your-project/sample-article
+
+  * Enable the td_aticle admin generator in your backend application's
+    _config/settings.yml_ enabled_modules section:
+
+        [php]
+        enabled_modules: [ ..., td_article ]
+
+  * To use the activate/deactivate AJAX interface in the backend td_article
+    module, remember to enable the __graphics__ module of the __tdCorePlugin__
+    inside your settings.yml file (see tdCorePlugin README).
+
+        [php]
+        enabled_modules: [ ..., graphics ]
+
+Configuration
+=============
+
+You can modify settings of the tdGuestbookPlugin in the
+__config/tdBlogPluginConfiguration.class.php__ file:
+
+  * _td_blog_recent_articles_count_ - number of articles to be displayed in
+    _tdSampleArticle_ module.
+
+  * _td_blog_upload_dir_ - upload directory for article thumbnails.
+
+Translations
+============
+
+You may translate tdSampleArticle module to your own language by creating
+__td.XX.xml__ file under _modules/tdSampleArticle/i18n_ directory (where XX is
+the language code). So far, English language is the default one and additionally
+Polish translationis provided.
+
+Dependencies
+============
+
+  * [tdCorePlugin](http://www.symfony-project.org/plugins/tdCorePlugin)
+
+  * [sfDoctrineGuardPlugin](http://www.symfony-project.org/plugins/sfDoctrineGuardPlugin)

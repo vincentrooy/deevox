@@ -10,6 +10,10 @@ inscription_deevonaute:
   url: deevonaute/new
   param: {module: deevonaute, action: new}
 
+radioblog:
+  url: radioblog
+  param: {module: radioblog, action: index}
+
 # generic rules
 sf_guard_signin:
   url:   /login

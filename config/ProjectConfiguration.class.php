@@ -11,5 +11,14 @@ class ProjectConfiguration extends sfProjectConfiguration
     $this->enablePlugins('sfDoctrineGuardPlugin');
     $this->enablePlugins('sfForkedDoctrineApplyPlugin');
     $this->enablePlugins('sfFormExtraPlugin');
+    $this->enablePlugins('sfThumbnailPlugin');
+    $this->enablePlugins('sfJqueryReloadedPlugin');
+    $this->enablePlugins('sfErrorNotifierPlugin');
+    $this->enablePlugins('sfCartPlugin');
+    $this->enablePlugins('tdCorePlugin');
+    $this->enablePlugins('tdBlogPlugin');
+    $this->enablePlugins('vjCommentPlugin');
+    $this->enablePlugins('lapeGravatarPlugin');
+    $this->enablePlugins('tdAudioPlugin');
   }
 }

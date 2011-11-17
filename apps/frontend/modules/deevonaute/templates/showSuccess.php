@@ -1,3 +1,4 @@
+<?php include_partial('deevonaute/menuDeevonaute')?>
 <table>
   <tbody>
     <tr>

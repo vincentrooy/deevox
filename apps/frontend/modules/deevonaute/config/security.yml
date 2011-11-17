@@ -1,18 +1,28 @@
 
-# delete:
- # credentials:  [Ecriture]
+new:
+  is_secure:     false
+ 
+create:
+  is_secure:     false
+ 
+delete:
+  is_secure:     on
+  credentials:  [admin]
 
-# show:
- # credentials:  [Lecture]
+show:
+  is_secure:     on
+  credentials:  [deevonaute]
 
-# edit:
- # credentials:  [Lecture]
+edit:
+  is_secure:     on
+  credentials:  [deevonaute]
 
-# update:
- # credentials:  [Lecture]
+update:
+  is_secure:     on
+  credentials:  [deevonaute]
 
-# default:
- # is_secure:   on
- # credentials: [Ecritue]
+default:
+  is_secure:   on
+  credentials: [Ecritue]
  
  

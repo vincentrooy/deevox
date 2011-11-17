@@ -1,5 +1,5 @@
 <?php
-require_once dirname(__FILE__).'/../lib/BasesfApplyActions.class.class.php';
+require_once(sfConfig::get('sf_plugins_dir').'/sfForkedDoctrineApplyPlugin/modules/sfApply/lib/BasesfApplyActions.class.php');
 /**
  * sfApply actions.
  *
@@ -9,7 +9,7 @@ require_once dirname(__FILE__).'/../lib/BasesfApplyActions.class.class.php';
  * @version    SVN: $Id: actions.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
  */
 // class sfApplyActions extends sfActions
-class sfApplyActions extends sfApplyActionsLibrary
+class sfApplyActions extends BasesfApplyActions
 {
  /**
   * Executes index action
@@ -23,7 +23,10 @@ class sfApplyActions extends sfApplyActionsLibrary
   
   protected function activateUser(sfGuardUser $user)
   {
-	//$user->addGroupByName('Membre');
-	//parent::activateUser($user);
+	//let us add the new deevonaute to the deevonaute group
+	$user->addGroupByName('deevonaute');
+	
+	//let us activate the deevonaute profile
+	parent::activateUser($user);
   }
 }

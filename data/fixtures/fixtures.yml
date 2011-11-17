@@ -15,29 +15,34 @@
     # password: changeme
     # name:     Kris Wallsmith
     # email:    kris.wallsmith@symfony-project.com
-# sfGuardUserProfile:
-  # Deevonaute1:
-    # first_name:          Maria
-    # last_name:           CROSS
-    # email_new:       vincentrooy@yahoo.fr
-    # username:            vincentrooy
-    # algorithm:
-    # salt:
-    # password:            saturne
-    # is_active:           true
-    # is_super_admin:      false
-    # last_login:
-    # type:                artiste
-    # profile_photo:		 F_Default.gif
-    # gender:              'Female'
-    # culture:             fr
-    # country:             Ishvalah
-    # way:                 rue
-    # additional_address:  'porte de verite'
-    # zip_code:            '54121'
-    # city:                Ishval
-    # date_of_birth:       12/01/1999
-    # phone_number:        '0123456789'
+sfGuardUserProfile:
+  Deevonaute1:
+    first_name:          Maria
+    last_name:           CROSS
+    email_new:           vincentrooy@yahoo.fr
+    type:                artiste
+    profile_photo:		 F_Default.gif
+    gender:              'Male'
+    culture:             fr
+    country:             Ishvalah
+    way:                 rue
+    additional_address:  'porte de verite'
+    zip_code:            '54121'
+    city:                Ishval
+    date_of_birth:       12/01/1999
+    phone_number:        '0123456789'
+    User:
+      first_name:          Maria
+      last_name:           CROSS
+      email_address:       vincentrooy@yahoo.fr
+      username:            vincentrooy
+      algorithm:
+      salt:
+      password:            saturne
+      is_active:           true
+      is_super_admin:      false
+      last_login:
+      Groups:         [Group_deevonaute]
   # Deevonaute2:
     # first_name:          Rooy
     # last_name:           MUSTANG
@@ -60,3 +65,33 @@
     # city:                Ishval
     # date_of_birth:       12/01/1899
     # phone_number:        '2123456789'
+sfGuardGroup:
+  Group_deevonaute:
+    name:           deevonaute
+    description:    Deevonaute group
+    Permissions:    [Permission_deevonaute]
+  Group_artiste:
+    name:           artiste
+    description:    Artiste group
+    Permissions:    [Permission_artite]
+  Group_deevonaute_plan:
+    name:           deevonaute_plan
+    description:    Deevonaute groupe avec forfait
+    Permissions:    [Permission_deevonaute_plan] 
+  Group_deevonaute_abonnement:
+    name:           deevonaute_subscription
+    description:    Deevonaute group 
+    Permissions:    [Permission_deevonaute_subscription]
+sfGuardPermission:
+  Permission_deevonaute:
+    name:           deevonaute
+    description:    deevonaute permission
+  Permission_deevonaute_plan:
+    name:           plan
+    description:    deevonaute permission ayant forfait
+  Permission_deevonaute_subscription:
+    name:           subscription
+    description:    deevonaute permission ayant abonnement
+  Permission_artite:
+    name:           artiste
+    description:    artiste permission 

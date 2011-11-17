@@ -1,0 +1,27 @@
+
+new:
+  is_secure:     on
+  credentials:  [deevonaute]
+ 
+create:
+  is_secure:     on
+  credentials:  [deevonaute]
+ 
+delete:
+  credentials:  [Ecriture]
+
+show:
+  is_secure:     false
+  # credentials:  [Lecture]
+
+edit:
+  credentials:  [Lecture]
+
+update:
+  credentials:  [Lecture]
+
+default:
+  is_secure:   on
+  credentials: [Ecritue]
+ 
+ 

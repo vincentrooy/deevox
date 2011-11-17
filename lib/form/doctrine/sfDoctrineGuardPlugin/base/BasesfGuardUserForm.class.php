@@ -15,39 +15,43 @@ abstract class BasesfGuardUserForm extends BaseFormDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'id'               => new sfWidgetFormInputHidden(),
-      'first_name'       => new sfWidgetFormInputText(),
-      'last_name'        => new sfWidgetFormInputText(),
-      'email_address'    => new sfWidgetFormInputText(),
-      'username'         => new sfWidgetFormInputText(),
-      'algorithm'        => new sfWidgetFormInputText(),
-      'salt'             => new sfWidgetFormInputText(),
-      'password'         => new sfWidgetFormInputText(),
-      'is_active'        => new sfWidgetFormInputCheckbox(),
-      'is_super_admin'   => new sfWidgetFormInputCheckbox(),
-      'last_login'       => new sfWidgetFormDateTime(),
-      'created_at'       => new sfWidgetFormDateTime(),
-      'updated_at'       => new sfWidgetFormDateTime(),
-      'groups_list'      => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'sfGuardGroup')),
-      'permissions_list' => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'sfGuardPermission')),
+      'id'                => new sfWidgetFormInputHidden(),
+      'first_name'        => new sfWidgetFormInputText(),
+      'last_name'         => new sfWidgetFormInputText(),
+      'email_address'     => new sfWidgetFormInputText(),
+      'username'          => new sfWidgetFormInputText(),
+      'algorithm'         => new sfWidgetFormInputText(),
+      'salt'              => new sfWidgetFormInputText(),
+      'password'          => new sfWidgetFormInputText(),
+      'is_active'         => new sfWidgetFormInputCheckbox(),
+      'is_super_admin'    => new sfWidgetFormInputCheckbox(),
+      'last_login'        => new sfWidgetFormDateTime(),
+      'type'              => new sfWidgetFormInputText(),
+      'created_at'        => new sfWidgetFormDateTime(),
+      'updated_at'        => new sfWidgetFormDateTime(),
+      'groups_list'       => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'sfGuardGroup')),
+      'permissions_list'  => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'sfGuardPermission')),
+      'deevo_themes_list' => new sfWidgetFormDoctrineChoice(array('multiple' => true, 'model' => 'DeevoTheme')),
     ));
 
     $this->setValidators(array(
-      'id'               => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
-      'first_name'       => new sfValidatorString(array('max_length' => 255, 'required' => false)),
-      'last_name'        => new sfValidatorString(array('max_length' => 255, 'required' => false)),
-      'email_address'    => new sfValidatorString(array('max_length' => 255)),
-      'username'         => new sfValidatorString(array('max_length' => 128)),
-      'algorithm'        => new sfValidatorString(array('max_length' => 128, 'required' => false)),
-      'salt'             => new sfValidatorString(array('max_length' => 128, 'required' => false)),
-      'password'         => new sfValidatorString(array('max_length' => 128, 'required' => false)),
-      'is_active'        => new sfValidatorBoolean(array('required' => false)),
-      'is_super_admin'   => new sfValidatorBoolean(array('required' => false)),
-      'last_login'       => new sfValidatorDateTime(array('required' => false)),
-      'created_at'       => new sfValidatorDateTime(),
-      'updated_at'       => new sfValidatorDateTime(),
-      'groups_list'      => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'sfGuardGroup', 'required' => false)),
-      'permissions_list' => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'sfGuardPermission', 'required' => false)),
+      'id'                => new sfValidatorChoice(array('choices' => array($this->getObject()->get('id')), 'empty_value' => $this->getObject()->get('id'), 'required' => false)),
+      'first_name'        => new sfValidatorString(array('max_length' => 255, 'required' => false)),
+      'last_name'         => new sfValidatorString(array('max_length' => 255, 'required' => false)),
+      'email_address'     => new sfValidatorString(array('max_length' => 255)),
+      'username'          => new sfValidatorString(array('max_length' => 128)),
+      'algorithm'         => new sfValidatorString(array('max_length' => 128, 'required' => false)),
+      'salt'              => new sfValidatorString(array('max_length' => 128, 'required' => false)),
+      'password'          => new sfValidatorString(array('max_length' => 128, 'required' => false)),
+      'is_active'         => new sfValidatorBoolean(array('required' => false)),
+      'is_super_admin'    => new sfValidatorBoolean(array('required' => false)),
+      'last_login'        => new sfValidatorDateTime(array('required' => false)),
+      'type'              => new sfValidatorString(array('max_length' => 255, 'required' => false)),
+      'created_at'        => new sfValidatorDateTime(),
+      'updated_at'        => new sfValidatorDateTime(),
+      'groups_list'       => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'sfGuardGroup', 'required' => false)),
+      'permissions_list'  => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'sfGuardPermission', 'required' => false)),
+      'deevo_themes_list' => new sfValidatorDoctrineChoice(array('multiple' => true, 'model' => 'DeevoTheme', 'required' => false)),
     ));
 
     $this->validatorSchema->setPostValidator(
@@ -85,12 +89,18 @@ abstract class BasesfGuardUserForm extends BaseFormDoctrine
       $this->setDefault('permissions_list', $this->object->Permissions->getPrimaryKeys());
     }
 
+    if (isset($this->widgetSchema['deevo_themes_list']))
+    {
+      $this->setDefault('deevo_themes_list', $this->object->DeevoThemes->getPrimaryKeys());
+    }
+
   }
 
   protected function doSave($con = null)
   {
     $this->saveGroupsList($con);
     $this->savePermissionsList($con);
+    $this->saveDeevoThemesList($con);
 
     parent::doSave($con);
   }
@@ -168,6 +178,44 @@ abstract class BasesfGuardUserForm extends BaseFormDoctrine
     if (count($link))
     {
       $this->object->link('Permissions', array_values($link));
+    }
+  }
+
+  public function saveDeevoThemesList($con = null)
+  {
+    if (!$this->isValid())
+    {
+      throw $this->getErrorSchema();
+    }
+
+    if (!isset($this->widgetSchema['deevo_themes_list']))
+    {
+      // somebody has unset this widget
+      return;
+    }
+
+    if (null === $con)
+    {
+      $con = $this->getConnection();
+    }
+
+    $existing = $this->object->DeevoThemes->getPrimaryKeys();
+    $values = $this->getValue('deevo_themes_list');
+    if (!is_array($values))
+    {
+      $values = array();
+    }
+
+    $unlink = array_diff($existing, $values);
+    if (count($unlink))
+    {
+      $this->object->unlink('DeevoThemes', array_values($unlink));
+    }
+
+    $link = array_diff($values, $existing);
+    if (count($link))
+    {
+      $this->object->link('DeevoThemes', array_values($link));
     }
   }
 

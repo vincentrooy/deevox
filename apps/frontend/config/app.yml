@@ -3,46 +3,114 @@
 
 # default values
 all:
-sf_guard_plugin:
-  remember_key_expiration_age:  2592000   # 30 days in seconds
-  remember_cookie_name:         deevoxRememberMe
+  error_message:
+    no_user:                  Sorry, but no deevonaute is connected actually !
+    user_not_yet_artist:      Sorry, this deevonaute is not already an artist !
+  sf_guard_plugin:
+    remember_key_expiration_age:  2592000   # 30 days in seconds
+    remember_cookie_name:         deevoxRememberMe
+
+    # profile_class: sfGuardUserProfile
+    # profile_field_name: user_id
+    # profile_facebook_uid_name: facebook_uid
+    # profile_email_name: email
+    # profile_email_hash_name: email_hash
 
 # sf_guard_plugin:
   # success_signin_url:      @my_route?param=value # the plugin uses the referer as default
   # success_signout_url:     module/action         # the plugin uses the referer as default
 
-  # recaptcha:
-    # enabled:        true
-    # public_key:     YOUR_PUBLIC_reCAPTCHA_KEY
-    # private_key:    YOUR_PRIVATE_reCAPTCHA_KEY
+  vjCommentPlugin:
+    list_order: ASC #or DESC
 
-sfForkedApply:
-  from:
-    email: "your@emailaddress.com"
-    fullname: "the staff at deevox.com"
-  routes:
-    apply: /deevonaute/new
-    reset: /deevonaute/password-reset
-    resetRequest: /deevonaute/reset-request
-    resetCancel: /deevonaute/reset-cancel
-    validate: /deevonaute/confirm/:validate
-    settings: /deevonaute/settings
-  mail_editable: false
+    #false by default
+    pagination_active: false
+    #10 by default
+    max_per_page: 5
 
-  # afterLogin: after_login_route
-  # after: after_route
+  purifier:
+    #set to false use only your allowed tags
+    merge: true
+    #by default, [blockquote,strong,div,br] are allowed
+    #set to [i,u] with merge to true allows [blockquote,strong,div,br,i,u]
+    #set to [] with merge to false disables allowed tags
+    allowed_tags: [i,u]
+    guardbind: false
+    restricted: false	
+  commentAdmin:
+    max_length:     50
+    #displayed fields
+    profile:
+      # alias between user and profiles tables
+      alias: Profile
+      # name of the fields used to retrieve name, email and website informations
+      field_name: Name
+      field_email: Email
+      field_website : Website
+  #gravatar
+  gravatar:
+    enabled:              false
+    default_size:         40
+    default_image:        ../web/images/gravatar_default.png
+    upload_dir:           .. # by default, this uses sf_upload_dir configuration
+    cache_dir_name:       g_cache
+
+  recaptcha:
+    enabled:        false
+    public_key:     YOUR_PUBLIC_reCAPTCHA_KEY
+    private_key:    YOUR_PRIVATE_reCAPTCHA_KEY
+
+  sfForkedApply:
+    from:
+      email: "from@no-reply.com"
+      fullname: "The staff of deevox.com"
+    routes:
+      apply: /deevonaute/new
+      reset: /deevonaute/password-reset
+      resetRequest: /deevonaute/reset-request
+      resetCancel: /deevonaute/reset-cancel
+      validate: /deevonaute/confirm/:validate
+      settings: /deevonaute/settings
+    mail_editable: false
+    confirmation:
+      reset: true
+      apply: true
+      email: true
+      reset_logged: false
+    # afterLogin: deevonaute/show
+    # after: after_route
 
   ###Custom forms###	
-  applyForm: sfApplyApplyForm
-  resetForm: sfApplyResetForm
-  resetRequestForm: sfApplyResetRequestForm
-  settingsForm: sfApplySettingsForm
+    applyForm: sfApplyApplyForm
+    resetForm: sfApplyResetForm
+    resetRequestForm: sfApplyResetRequestForm
+    settingsForm: sfApplySettingsForm
 
   # that section is as a fallback only
-sfApplyPlugin:
-  from:
-    email: "your@emailaddress.com"
-    fullname: "the staff at deevox.com"
+  sfApplyPlugin:
+    from:
+      email: "from@no-reply.com"
+      fullname: "The staff of deevox.com"
   # as a fallback we use old options too:
   # afterLogin: after_login_route
   # after: after_route
+
+
+
+  # facebook:
+    # api_key: xxx
+    # api_secret: xxx
+    # api_id: xxx
+    # redirect_after_connect: false
+    # redirect_after_connect_url: ''
+    # connect_signin_url: 'sfFacebookConnectAuth/signin'
+    # app_url: '/my-app'   # the facebook application canvas url
+    # guard_adapter: ~     # to customise a guard adapter
+    # js_framework: none # none, jQuery or prototype.
+
+
+  # facebook_connect:
+    # load_routing:     true
+    # user_permissions: []     
+
+  culture_locale:  fr_FR.utf8

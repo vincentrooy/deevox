@@ -1,0 +1,60 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           tdSubpage
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          tdSubpage
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   td_admin
+
+    config:
+      actions: ~
+      fields:
+        name:
+          label: Nazwa
+        content:
+          label: Zawartość
+        active:
+          label: Aktywna
+        created_at:
+          label: Utworzono
+        updated_at:
+          label: Zmodyfikowano
+      list:
+        title: Lista stron
+        display: [ name, content, active, updated_at ]
+        max_per_page: 20
+        layout: stacked
+        params: |
+          <h3>%%name%%</h3>
+          <div style="font-style: italic;">/subpage/%%slug%%</div>
+          <span id="subpage_visible_column_%%id_value%%">%%active%%</span>
+          %%content_short%%
+#        actions: []
+        batch_actions:
+          _delete: ~
+          activate: ~
+          deactivate: ~
+        object_actions:
+          _edit: ~
+          _delete: ~
+          activate: ~
+          deactivate: ~
+      form:
+        display: [ name, slug, content, active ]
+        fields:
+          name:
+            attributes: { size: 80 }
+          title:
+            attributes: { size: 80 }
+          content:
+            attributes: { cols: 80, rows: 16 }
+      filter:
+        class: false
+      edit:
+        title: Edytuj stronę

@@ -2,4 +2,5 @@ settings:
   is_secure: true
 editEmail:
   is_secure: true
-
+reset:
+  is_secure: false

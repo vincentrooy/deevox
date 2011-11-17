@@ -1,0 +1,46 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           tdConfig
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          tdConfig
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+    css:                   td_admin
+
+    config:
+      actions: ~
+      fields:
+        name:
+          label: Nazwa
+        value:
+          label: Wartość
+        description:
+          label: Opis
+        created_at:
+          label: Utworzono
+        updated_at:
+          label: Zmodyfikowano
+      list:
+        title: Lista ustawień
+        display: [ name, value, description, updated_at ]
+        max_per_page: 20
+        actions: []
+      form:
+        display: [ name, value, description ]
+        fields:
+          name:
+            attributes: { size: 80, readonly: true }
+          value:
+            attributes: { size: 80 }
+          description:
+            attributes: { cols: 78, readonly: true }
+      filter:
+        class: false
+      edit:
+        title: Edytuj ustawienie
+

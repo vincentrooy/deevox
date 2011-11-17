@@ -28,6 +28,18 @@ dev:
     # param:
       # delivery_strategy: none
     class: sfMailer
+    # param:
+      # logging:           %SF_LOGGING_ENABLED%
+      # charset:           %SF_CHARSET%
+      # delivery_strategy: realtime
+      # transport:
+        # class: Swift_SmtpTransport
+        # param:
+          # host:       localhost
+          # port:       25
+          # encryption: ~
+          # username:   ~
+          # password:   ~
     param:
       logging:           %SF_LOGGING_ENABLED%
       charset:           %SF_CHARSET%
@@ -35,11 +47,11 @@ dev:
       transport:
         class: Swift_SmtpTransport
         param:
-          host:       localhost
-          port:       25
-          encryption: ~
-          username:   ~
-          password:   ~
+          host:       smtp.gmail.com
+          port:       465
+          encryption: ssl
+          username:   vincent.fonkoua@gmail.com
+          password:   neptune4375
 all:
   routing:
     class: sfPatternRouting
@@ -52,3 +64,6 @@ all:
     param:
       cache_key_use_vary_headers: true
       cache_key_use_host_name:    true
+
+  user:
+    class: myUser

@@ -102,8 +102,8 @@ class sfWidgetFormJQueryDate extends sfWidgetForm
   function wfd_%s_check_linked_days()
   {
     var daysInMonth = 32 - new Date(jQuery("#%s").val(), jQuery("#%s").val() - 1, 32).getDate();
-
-    jQuery("#%s option").attr("disabled", "");
+	
+	jQuery("#%s option").removeAttr("disabled");
     jQuery("#%s option:gt(" + (%s) +")").attr("disabled", "disabled");
 
     if (jQuery("#%s").val() > daysInMonth)

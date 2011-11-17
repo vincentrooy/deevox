@@ -15,6 +15,7 @@
  * @property boolean $is_active
  * @property boolean $is_super_admin
  * @property timestamp $last_login
+ * @property string $type
  * @property Doctrine_Collection $Groups
  * @property Doctrine_Collection $Permissions
  * @property Doctrine_Collection $sfGuardUserPermission
@@ -22,6 +23,9 @@
  * @property sfGuardRememberKey $RememberKeys
  * @property sfGuardForgotPassword $ForgotPassword
  * @property sfGuardUserProfile $Profile
+ * @property Doctrine_Collection $Articles
+ * @property Artist $Artist
+ * @property Doctrine_Collection $DeevoThemes
  * 
  * @method string                getFirstName()             Returns the current record's "first_name" value
  * @method string                getLastName()              Returns the current record's "last_name" value
@@ -33,6 +37,7 @@
  * @method boolean               getIsActive()              Returns the current record's "is_active" value
  * @method boolean               getIsSuperAdmin()          Returns the current record's "is_super_admin" value
  * @method timestamp             getLastLogin()             Returns the current record's "last_login" value
+ * @method string                getType()                  Returns the current record's "type" value
  * @method Doctrine_Collection   getGroups()                Returns the current record's "Groups" collection
  * @method Doctrine_Collection   getPermissions()           Returns the current record's "Permissions" collection
  * @method Doctrine_Collection   getSfGuardUserPermission() Returns the current record's "sfGuardUserPermission" collection
@@ -40,6 +45,9 @@
  * @method sfGuardRememberKey    getRememberKeys()          Returns the current record's "RememberKeys" value
  * @method sfGuardForgotPassword getForgotPassword()        Returns the current record's "ForgotPassword" value
  * @method sfGuardUserProfile    getProfile()               Returns the current record's "Profile" value
+ * @method Doctrine_Collection   getArticles()              Returns the current record's "Articles" collection
+ * @method Artist                getArtist()                Returns the current record's "Artist" value
+ * @method Doctrine_Collection   getDeevoThemes()           Returns the current record's "DeevoThemes" collection
  * @method sfGuardUser           setFirstName()             Sets the current record's "first_name" value
  * @method sfGuardUser           setLastName()              Sets the current record's "last_name" value
  * @method sfGuardUser           setEmailAddress()          Sets the current record's "email_address" value
@@ -50,6 +58,7 @@
  * @method sfGuardUser           setIsActive()              Sets the current record's "is_active" value
  * @method sfGuardUser           setIsSuperAdmin()          Sets the current record's "is_super_admin" value
  * @method sfGuardUser           setLastLogin()             Sets the current record's "last_login" value
+ * @method sfGuardUser           setType()                  Sets the current record's "type" value
  * @method sfGuardUser           setGroups()                Sets the current record's "Groups" collection
  * @method sfGuardUser           setPermissions()           Sets the current record's "Permissions" collection
  * @method sfGuardUser           setSfGuardUserPermission() Sets the current record's "sfGuardUserPermission" collection
@@ -57,6 +66,9 @@
  * @method sfGuardUser           setRememberKeys()          Sets the current record's "RememberKeys" value
  * @method sfGuardUser           setForgotPassword()        Sets the current record's "ForgotPassword" value
  * @method sfGuardUser           setProfile()               Sets the current record's "Profile" value
+ * @method sfGuardUser           setArticles()              Sets the current record's "Articles" collection
+ * @method sfGuardUser           setArtist()                Sets the current record's "Artist" value
+ * @method sfGuardUser           setDeevoThemes()           Sets the current record's "DeevoThemes" collection
  * 
  * @package    deevox
  * @subpackage model
@@ -113,12 +125,22 @@ abstract class BasesfGuardUser extends sfDoctrineRecord
         $this->hasColumn('last_login', 'timestamp', null, array(
              'type' => 'timestamp',
              ));
+        $this->hasColumn('type', 'string', 255, array(
+             'type' => 'string',
+             'length' => 255,
+             ));
 
 
         $this->index('is_active_idx', array(
              'fields' => 
              array(
               0 => 'is_active',
+             ),
+             ));
+        $this->setSubClasses(array(
+             'GravatarUser' => 
+             array(
+              'type' => 'GravatarUser',
              ),
              ));
     }
@@ -155,6 +177,19 @@ abstract class BasesfGuardUser extends sfDoctrineRecord
         $this->hasOne('sfGuardUserProfile as Profile', array(
              'local' => 'id',
              'foreign' => 'user_id'));
+
+        $this->hasMany('tdArticle as Articles', array(
+             'local' => 'id',
+             'foreign' => 'author_id'));
+
+        $this->hasOne('Artist', array(
+             'local' => 'id',
+             'foreign' => 'sf_guard_user_id'));
+
+        $this->hasMany('DeevoTheme as DeevoThemes', array(
+             'refClass' => 'DeevoThemeUser',
+             'local' => 'sf_guard_user_id',
+             'foreign' => 'deevo_theme_id'));
 
         $timestampable0 = new Doctrine_Template_Timestampable(array(
              ));

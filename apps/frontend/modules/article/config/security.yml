@@ -1,0 +1,30 @@
+
+index:
+  is_secure:     false
+new:
+  is_secure:     on
+  credentials:  [deevonaute]
+ 
+create:
+  is_secure:     on
+  credentials:  [deevonaute]
+ 
+delete:
+  credentials:  [deevonaute, admin]
+
+show:
+  is_secure:     false
+  # credentials:  [Lecture]
+
+edit:
+  is_secure:     on
+  credentials:  [admin]
+
+update:
+  is_secure:     on
+  credentials:  [admin]
+
+default:
+  is_secure:   on
+ 
+ 

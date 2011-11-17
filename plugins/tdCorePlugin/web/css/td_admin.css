@@ -1,0 +1,39 @@
+/*================== admin : custom action icons ===================*/
+
+#sf_admin_container ul li.sf_admin_action_activate a
+{
+  background: url(/tdCorePlugin/images/icons/small/activate.png) no-repeat 0 0;
+}
+
+#sf_admin_container ul li.sf_admin_action_deactivate a
+{
+  background: url(/tdCorePlugin/images/icons/small/deactivate.png) no-repeat 0 0;
+}
+
+/*================== admin : bordered images =======================*/
+
+.sf_admin_list img.border {
+    border: 1px solid black;
+    margin: 3px;
+}
+
+/*================== admin : text boxes ============================*/
+
+.text_box {
+    text-align: justify;
+}
+
+.odd .text_box {
+   border: 2px dashed #ddd;
+   background-color: #eee;
+   padding: 5px;
+   margin: 5px;
+}
+
+.even .text_box {
+   border: 2px dashed #ccc;
+   background-color: #ddd;
+   padding: 5px;
+   margin: 5px;
+}
+

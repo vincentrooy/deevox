@@ -1,10 +1,17 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
+
     <?php include_http_metas() ?>
     <?php include_metas() ?>
     <?php include_title() ?>
     <link rel="shortcut icon" href="/favicon.ico" />
+	
+	<?php /*use_stylesheet("/sfCartPlugin/css/cart.css") ?>    
+	<?php use_javascript("/sfCartPlugin/js/jquery-1.4.4.min.js") ?>  
+	<?php use_javascript("/sfCartPlugin/js/jquery-ui-1.8.9.custom.min.js") ?> 
+	<?php use_javascript("/sfCartPlugin/js/cart.js")*/ ?> 
+	
     <?php include_stylesheets() ?>
     <?php include_javascripts() ?>
   </head>
@@ -52,8 +59,8 @@
 		<div class="main_menu" class="clear_fix">
 			<ul class="clear_fix">
 				<li class="first"><a href="<?php echo url_for('@homepage') ;?>"><?php echo __('Accueil') ?></a></li>
-				<li><a href="<?php echo url_for('@homepage') ;?>"><?php echo __('Mon Deevox') ?></a></li>
-				<li><a href="<?php echo url_for('@homepage')  ;?>"><?php echo __('Artiste') ?></a></li>
+				<li><a href="<?php echo url_for('deevonaute/show') ;?>"><?php echo __('Mon Deevox') ?></a></li>
+				<li><a href="<?php echo url_for('artiste/show')  ;?>"><?php echo __('Artiste') ?></a></li>
 				<li class="last"><a href="<?php echo url_for('@homepage') ?>"><?php echo __('Boutique') ?></a></li>
 			</ul>
 		</div>

@@ -12,5 +12,136 @@
  */
 class sfGuardUserProfile extends PluginsfGuardUserProfile
 {
-
+  /**
+	 * return the absolute path of the ProfilePhoto
+	 */
+	public function getDeevonauteFileSrc()
+	{
+		if (!$this->getProfilePhoto()) {
+			return null;
+		}
+ 
+		return $this->getDeevonauteDirSrc().'/'.$this->getProfilePhoto();
+	}
+ 
+	/**
+	 *Returns the relative path of the thumbnails
+	 */
+	public function getDeevonauteFileSrcMini()
+	{
+		if (!$this->getProfilePhoto()) {
+			return null;
+		}
+ 
+		return $this->getDeevonauteDirSrc().'/mini_Deevonaute/'.$this->getProfilePhoto();
+	}
+ 
+	/**
+	 * Returns the absolute path of the ProfilePhoto
+	 */
+	public function getDeevonauteFilePath()
+	{
+		if (!$this->getProfilePhoto()) {
+			return null;
+		}
+ 
+		return $this->getDeevonauteDirPath().'/'.$this->getProfilePhoto();
+	}
+ 
+	/**
+	 * Returns the absolute path of the thumbnails
+	 */
+	public function getDeevonauteFileMini()
+	{
+		if (!$this->getProfilePhoto()) {
+			return null;
+		}
+ 
+		return $this->getDeevonauteDirMini().'/'.$this->getProfilePhoto();
+	}
+ 
+	/**
+	 * Returns the path of the file relating
+	 */
+	public function getDeevonauteDirSrc()
+	{
+		return '/uploads/photos/deevonautes';
+	}
+ 
+	/**
+	 * Returns the absolute path to the folder
+	 */
+	public function getDeevonauteDirPath()
+	{
+		return sfConfig::get('sf_upload_dir').'/photos/deevonautes';
+	}
+ 
+	/**
+	 * Returns the absolute path to the folder thumbnail
+	 */
+	public function getDeevonauteDirMini()
+	{
+		return $this->getDeevonauteDirPath().'/mini_Deevonaute';
+	}
+	
+	
+	/**
+	* Performed before the backup
+	*/
+	public function preSave($event)
+	{
+	 
+	// $event->getInvoker permet de récupérer le dernier enregistrement (Doctrine_Record)
+	// getModified(true) permet de récupérer les anciennes valeurs
+	 
+	$modified = $event->getInvoker()->getModified( true );
+	 
+	// look if the ProfilePhoto field was changed
+	 
+	if (isset($modified['profile_photo']))
+	{
+		$old_path = $this->getDeevonauteDirPath() . '/' . $modified['profile_photo'];
+		$old_mini = $this->getDeevonauteDirMini().'/'. $modified['profile_photo'];
+	 
+		 // If the file exists, we delete it
+		if (file_exists($old_path))
+		{
+			@unlink($old_path);
+	 
+		}
+	 
+		// same for miniature
+		if (file_exists($old_mini))
+		{
+			@unlink($old_mini);
+		}
+	 }
+	}
+	 
+	public function postDelete($event)
+	{
+	  // We remove the ProfilePhoto if the file exists and miniature
+	  if (file_exists($event->getInvoker()->getDeevonauteFilePath()))
+	  {
+		@unlink($event->getInvoker()->getDeevonauteFilePath());
+		@unlink($event->getInvoker()->getDeevonauteFileMini());
+	  }
+	}
+	
+	public function updateObject($values = null)
+	{
+		$object = parent::updateObject($values);
+	 
+		if($photos = $object->getPhoto()){
+			// creation of the thumbnail
+			$thumbnail = new sfThumbnail(150, 150);
+			$thumbnail->loadFile($object->getDeevonauteFilePath());
+			$thumbnail->save($object->getDeevonauteFileMini(), 'image/png');
+	 
+			return $object;
+		}
+	 
+	}
+	
+	
 }

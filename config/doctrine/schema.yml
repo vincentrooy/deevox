@@ -3,13 +3,8 @@ Deevonaute:
   tableName: deevonaute
   inheritance: 
     type: column_aggregation
-    keyField: type
-    keyValue: 1
     extends: sfGuardUserProfile
   columns:
-    profile_photo:
-      type: string(255)
-      notnull: false
     gender:
       type: string(10)
       notnull: true
@@ -38,24 +33,331 @@ Deevonaute:
     phone_number:
       type: integer(20)
       notnull:              true
-    film_prefere_1:
+    profile_photo:
+      type: string(255)
+      notnull: false
+    favorite_movie_1:
       type:                 string(100)
-    film_prefere_2:
+    favorite_movie_2:
       type:                 string(100)
-    film_prefere_3:
+    favorite_movie_3:
       type:                 string(100)
-    artiste_prefere_1:
+    favorite_artist_1:
       type:                 string(100)
-    artiste_prefere_2:
+    favorite_artist_2:
       type:                 string(100)
-    artiste_prefere_3:
+    favorite_artist_3:
       type:                 string(100)
-    genre_prefere_1:
+    favorite_music_genre_1:
       type:                 string(100)
-    genre_prefere_2:
+    favorite_music_genre_2:
       type:                 string(100)
-    genre_prefere_3:
+    favorite_music_genre_3:
       type:                 string(100)
     size_of_storage_space:
       type:                 integer
       default:              0
+    facebook_uid:     
+      type:                 integer(5)
+    email_hash:       
+      type:                 varchar(255)
+
+Artist:
+  connection: doctrine
+  tableName: artist
+  columns:
+    sf_guard_user_id:
+      type:             integer
+    deevo_theme_id:
+      type:             integer
+    artistName:
+      type:             string(100)
+      notnull:          true
+    hometown:
+      type:             string(100)
+      notnull:			true
+    nationality:       
+      type:				string(100)
+    website:
+      type:             string(100)
+    facebook_address:
+      type:             string(100)
+    twitter_address:
+      type:             string(100)
+    date_of_early_career:
+      type:             string(100)
+    number_of_album:
+      type:             string(100)
+    number_of_title:
+      type:             string(100)
+    resume:
+      type:             clob
+    detail:
+      type:             clob
+    creation_date_of_the_account:
+      type:             date
+    photo_biography:
+      type: 		    string(255)
+      notnull: 		    false
+  relations:
+    User:
+      class:            sfGuardUser
+      foreignType:      one  
+    Theme:
+      class:            Theme
+      foreignType:      one
+
+DeevoTheme:	  
+  connection:           doctrine
+  tableName:            deevo_theme
+  columns:
+    name:
+      type:             string(255)
+      notnull:          true
+    theme_file:
+      type:             string(255)
+      notnull:          true 
+    theme_image:
+      type:             string(255)
+      notnull:          true
+    product_id:
+      type:             integer
+      notnull:          true
+  relations:
+    Product:
+      class:            Product
+      foreignType:      one
+    User:
+      foreignAlias:     DeevoThemes
+      class:            sfGuardUser
+      refClass:         DeevoThemeUser
+
+DeevoThemeUser:
+  connection:           doctrine
+  tableName:            deevo_theme_user
+  columns:
+    sf_guard_user_id:
+      type:             integer
+      notnull:          true
+    deevo_theme_id:
+      type:             integer
+      notnull:          true
+  relations:
+    DeevoTheme:
+      foreignAlias:     DeevoThemeUsers
+      onDelete:         CASCADE
+    User:
+      foreignAlias:     DeevoThemeUsers
+      onDelete:         CASCADE
+
+Article:
+  connection:           doctrine
+  tableName:            article
+  inheritance: 
+    type:               column_aggregation
+    extends:            tdArticle
+  actAs:
+    Commentable:        ~
+
+GravatarUser:
+  connection:           doctrine
+  tableName:            gravatar_user
+  inheritance: 
+    type:               column_aggregation
+    extends:            sfGuardUser
+  actAs:
+    Gravatar:
+      email_field:        email_address
+
+MusicalGender:
+  connection:           doctrine
+  tableName:            musical_gender
+  columns:
+    libelle:
+      type:             string(100)
+  relations:
+    Artist:
+      class:            Artist
+      foreignAlias:     MusicalGenders
+      refClass:         ArtistMusicalGender
+
+ArtistMusicalGender:
+  connection:           doctrine
+  tableName:            artist_musical_gender
+  columns:
+    artist_id:
+      type:             integer
+      primary:          true
+    musical_gender_id:
+      type:             integer
+      primary:          true
+  relations:
+    Artist:
+      foreignAlias: 	ArtistsMusicalGenders
+      onDelete:         CASCADE
+    MusicalGender:
+      foreignAlias:     ArtistsMusicalGenders
+      onDelete:         CASCADE
+
+MusicalInstrument:
+  connection:           doctrine
+  tableName:            musical_instrument
+  columns:
+    libelle:
+      type:             string(100)
+  relations:
+    Artist:
+      class:			Artist
+      foreignAlias:     MusicalInstruments
+      refClass:         ArtistMusicalInstrument
+
+ArtistMusicalInstrument:
+  connection:           doctrine
+  tableName:            artist_musical_instrument
+  columns:
+    artist_id:
+      type:             integer
+      primary:          true
+    musical_instrument_id:
+      type:             integer
+      primary:          true
+  relations:
+    Artist:
+      foreignAlias:    ArtistsMusicalInstruments
+      onDelete:        CASCADE 
+    MusicalInstrument:
+      foreignAlias:    ArtistsMusicalInstruments
+      onDelete:        CASCADE 
+
+Album:
+  connection:          doctrine
+  tableName:           album
+  inheritance: 
+    type:              column_aggregation
+    keyField:          type
+    keyValue:          1
+    extends:           tdTrackAlbum
+  columns:
+    is_for_single: 
+      type:            boolean
+      default:         0
+    artist_id: 
+      type:            integer
+    product_id:
+      type:             integer
+      notnull:          true
+  relations:
+    MusicalGender:
+      class:           MusicalGender
+      foreignAlias:    Albums
+      refClass:        AlbumMusicalGender
+    Artist:
+      class:           Artist
+      foreignAlias:    Albums
+      local:           artist_id
+      foreign:         id
+    Product:
+      class:            Product
+      foreignType:      one
+
+AlbumMusicalGender:
+  connection:          doctrine
+  tableName:           album_musical_gender
+  columns:
+    album_id:
+      type:            integer
+      primary:         true
+    musical_gender_id:
+      type:            integer
+      primary:         true
+  relations:
+    MusicalGender: 
+      foreignAlias:    AlbumsMusicalGenders
+      onDelete:        CASCADE
+    Album:
+      foreignAlias:    AlbumsMusicalGenders
+      onDelete:        CASCADE
+
+Track:
+  connection:          doctrine
+  tableName:           track
+  inheritance: 
+    type:              column_aggregation
+    keyField:          type
+    keyValue:          1
+    extends:           tdTrack
+  columns:
+    artist_id:
+      type:            integer
+    product_id:
+      type:             integer
+      notnull:          true
+    composer:
+      type:            string(100)
+    lyricist:
+      type:            string(100)
+    interpreter:
+      type:            string(100)
+    producer:
+      type:            string(100)
+    place_of_registration:
+      type:            string(100)
+    photo_track:
+      type:            string(100)
+    active:
+      type:            boolean
+      notnull: 		   true
+      default: 		   true
+  relations:
+    Album:
+      foreignAlias:    tracks
+      class:           Album
+      refClass:        AlbumTrack
+    Artist:
+      foreignAlias:    tracks
+      class:           Artist
+      foreign:         id
+      local:           artist_id
+    MusicalGender:
+      class:            MusicalGender
+      foreignAlias:     MusicalGenders
+      refClass:         TrackMusicalGender
+    Product:
+      class:            Product
+      foreignType:      one
+
+TrackMusicalGender:
+  connection:          doctrine
+  tableName:           track_musical_gender
+  columns:
+    track_id:
+      type:            integer
+      primary:         true
+    musical_gender_id:
+      type:            integer
+      primary:         true
+  relations:
+    MusicalGender:
+      foreignAlias:    AlbumsTracks
+      onDelete:        CASCADE
+    track:
+      foreignAlias:    AlbumsTracks
+      onDelete:        CASCADE
+
+AlbumTrack:
+  connection:          doctrine
+  tableName:           album_track
+  columns:
+    album_id:
+      type:            integer
+      primary:         true
+    track_id:
+      type:            integer
+      primary:         true
+  relations:
+    Album:
+      foreignAlias:    AlbumsTracks
+      onDelete:        CASCADE
+    track:
+      foreignAlias:    AlbumsTracks
+      onDelete:        CASCADE

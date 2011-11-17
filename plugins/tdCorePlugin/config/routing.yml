@@ -1,0 +1,64 @@
+tdSubpage:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                tdSubpage
+    module:               tdSubpage
+    prefix_path:          /tdSubpage
+    column:               id
+    with_wildcard_routes: true
+
+tdSubpage_show:
+  url:     /subpage/:slug
+  class:   sfDoctrineRoute
+  param:   { module: tdSubpage, action: show }
+  options: { model: tdSubpage, type: object }
+
+tdSubpage_ajax_activate:
+  url:   /td_ajax_subpage_activate/:id
+  param: { module: tdSubpage, action: activate }
+  requirements:
+    id: \d+
+
+tdSubpage_ajax_deactivate:
+  url:   /td_ajax_subpage_deactivate/:id
+  param: { module: tdSubpage, action: deactivate }
+  requirements:
+    id: \d+
+
+########################################
+
+tdLink:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                tdLink
+    module:               tdLink
+    prefix_path:          /tdLink
+    column:               id
+    with_wildcard_routes: true
+
+tdLink_display:
+  url:   /link-display
+  param: { module: tdLink, action: display }
+
+tdLink_ajax_activate:
+  url:   /td_ajax_link_activate/:id
+  param: { module: tdLink, action: activate }
+  requirements:
+    id: \d+
+
+tdLink_ajax_deactivate:
+  url:   /td_ajax_link_deactivate/:id
+  param: { module: tdLink, action: deactivate }
+  requirements:
+    id: \d+
+
+########################################
+
+tdConfig:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                tdConfig
+    module:               tdConfig
+    prefix_path:          /tdConfig
+    column:               id
+    with_wildcard_routes: true

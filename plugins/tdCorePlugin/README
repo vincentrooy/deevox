@@ -1,0 +1,182 @@
+## table of contents
+
+*   [tdCorePlugin](#tdCorePlugin)
+*   [Installation](#installation)
+*   [Usage](#usage)
+*   [Configuration](#configuration)
+*   [tdConfig](#tdConfig)
+*   [tdSubpage](#tdSubpage)
+*   [Breadcrumbs](#breadcrumbs)
+*   [AJAX backend interface](#ajax_backend_interface)
+*   [sfAdminDashPlugin compatibility](#sfAdminDashPlugin)
+*   [Random Data Generator](#random_data_generator)
+
+<a name="tdCorePlugin">tdCorePlugin</a>
+==========================================
+
+The `tdCorePlugin` is a symfony plugin that provides basic functionalities
+enabling TD CMF, such as common configuration or random data generation.
+
+This plugin is a part of __TD CMF__ and is based on __Doctrine ORM__.
+
+<a name="installation">Installation</a>
+=======================================
+
+Install the plugin via the subversion repository by executing the following
+command from the project root directory:
+
+    $ svn co http://svn.symfony-project.com/plugins/tdCorePlugin/trunk plugins/tdCorePlugin
+
+or by using the default symfony plugin install command:
+
+    $ ./symfony plugin:install -s beta tdCorePlugin
+
+as the actual release is in its beta stage. Run the following command to enable
+the assets of tdCorePlugin:
+
+    $ ./symfony plugin:publish-assets
+
+One of the assets is nice CSS file cooperating with other __TD CMF__ plugins.
+
+<a name="usage">Usage</a>
+=========================
+
+  * This plugin is the main part of the __TD CMF__ and therefore it should be
+    installed as the first one. Other td components will use functionalities
+    provided with tdCorePlugin.
+
+  * Enable the file in your _apps/backend/config/view.yml_ file:
+
+        [php]
+        stylesheets:    [ /tdCorePlugin/css/td_admin.css ]
+
+<a name="configuration">Configuration</a>
+=========================================
+
+  * _td_short_text_sign_count_ - character count of a short descrtiption of any
+    kind of object used among admin generators (used by tdSubpage,
+    tdGuestbookPlugin, tdAudioPlugin, tdVideoPlugin and so on)
+
+<a name="tdConfig">tdConfig</a>
+===============================
+
+tdConfig is a model representing dynamic configuration options in your symfony
+project. It is provided with the tdConfig backend module enabing easy
+configuration options management. Just enable the module in your
+__backend/config/settings.yml__ file:
+
+    enabled_modules: [ ... , tdConfig ]
+
+<a name="tdSubpage">tdSubpage</a>
+=================================
+
+tdSubpage is a Sluggable model representing subpages in your symfony project.
+Enables easy management of pages with dynamic content. Use it in your frontend
+application - in actions, components and layout templates:
+
+    [php]
+    link_to('Example Subpage', 'tdSubpage', $subpage)
+
+<a name="breadcrumbs">Breadcrumbs</a>
+=====================================
+
+This part is based on _isicsBreadcrumbsPlugin_. It includes a singleton managing
+breadcrumb items. Displaying breadcrumbs is done using a component. At first,
+enable the tdBreadcrumb module:
+
+    enabled_modules: [ ... , tdBreadcrumb ]
+
+Define the path in your templates:
+
+    [plain]
+    <?php $breadcrumbs->addItem('My action', 'myModule/myAction') ?>
+
+    => Home > My action
+
+If the action is deeper:
+
+    [plain]
+    <?php $breadcrumbs->addItem('My previous action', 'myModule/myPreviousAction') ?>
+    <?php $breadcrumbs->addItem('My action', 'myModule/myAction') ?>
+
+    => Home > My previous action > My action
+
+Define the path in your actions:
+
+    [plain]
+    public function executeMyAction()
+    {
+      tdBreadcrumb::getInstance()->addItem('My action', 'myModule/myAction');
+
+    => Home > My action
+
+Include the breadcrumbs component (in the layout for instance):
+
+    [plain]
+    <p id="breadcrumbs">
+      You are here :
+      <?php include_component('tdBreadcrumb', 'display') ?>
+    </p>
+
+You can set your own root:
+
+    [plain]
+    <p id="breadcrumbs">
+      You are here :
+      <?php include_component('tdBreadcrumb', 'display', array(
+        'root' => array('text' => 'Home', 'uri' => '@myHomepage')
+      )) ?>
+    </p>
+
+<a name="ajax_backend_interface">AJAX backend interface</a>
+===========================================================
+
+Some of TD CMF plugins use AJAX actions to provide user-friendly interface
+(such as tdGuestbookPlugin). Enable the graphics module from tdCorePlugin to
+enable AJAX actions in other plugins to run correctly:
+
+    enabled_modules: [ ... , graphics ]
+
+More about __TD CFM__ AJAX backend feature in my [symfony developer
+blog](http://symfony-world.blogspot.com/2010/05/ajaxsymfony-easy-user-friendly-example.html "Ajax/symfony easy & user friendly example")
+
+<a name="sfAdminDashPlugin">sfAdminDashPlugin compatibility</a>
+===============================================================
+
+The icons provided with the plugin may be used for sfAdminDashPlugin. To do so,
+you need to do the following:
+
+  * modify the __sfAdminDashPlugin/config/app.yml__ file, set:
+
+        [php]
+        image_dir: /tdCorePlugin/images/icons/
+
+  * and finally you may use the icons in the app.yml file:
+
+        [php]
+        categories:
+          Administration:
+            items:
+              Newsletter:
+                url: newsletter
+                image: newsletter.png
+
+<a name="random_data_generator">Random Data Generator</a>
+=========================================================
+
+There is a class in the plugin responsible for generating some random data used
+for the symfony fixtures. During development phase its essential to see how some
+mechanisms work when real data is available in the database. Writing the same
+methods many times is useless - that's where random data generator comes in. an
+example to generate some data in _data/fixtures/sample.yml_ file is shown below:
+
+    [php]
+    <?php $generator = new tdRandomDataGenerator(); ?>
+    Guestbook:
+    <?php for($i = 0; $i < 150; $i++): ?>
+      guestbook_<?php echo $i ?>:
+        author: <?php echo $generator->getRandomName()."\n" ?>
+        email: <?php echo $generator->getRandomEmail()."\n" ?>
+        http: <?php echo $generator->getRandomHttp()."\n" ?>
+        text: <?php echo $generator->getRandomText(mt_rand(20,100)*mt_rand(1,5))."\n" ?>
+    <?php endfor; ?>

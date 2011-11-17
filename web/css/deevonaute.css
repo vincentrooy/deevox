@@ -1,0 +1,293 @@
+
+
+/*----------------------------------------------Les tables--------------------------------*/
+
+
+
+
+
+/*----------------------------------------------Les Boutons--------------------------------*/
+/*
+.bouton		{
+					margin-top:5px;
+					margin-right:4px;
+					font-family:calibri;
+					background-image: url('./../image/fond.png');
+					background-repeat:repeat-x;
+					-moz-box-shadow: 1px 1px 5px #555;
+					-moz-border-radius: 8px 8px 8px 8px;
+					height:32px;
+			}
+			
+#bModifierPhoto	{
+					margin-left:30px;
+					width:200px;
+				}	
+				
+#fphoto	.bouton {
+					width:100%;
+				}			
+
+			
+.Tbouton	{
+				margin-left:130px;
+			}
+			
+.TboutonProfil	{
+					margin-left:100px;
+				}
+				
+.TboutonPhoto	{
+					margin-left:10px;
+				}
+				
+#fModifierPassForm	.bouton	{
+								width:100%;
+							}
+							
+#finfos	.bouton	{
+					width:100%;
+				}
+/*-------------------------------------------Les Fieldset----------------------------------*/
+/*		
+.bordure	{
+				padding:auto auto;
+				margin-top:40px;
+				margin-bottom:30px;
+				margin-left:40px;
+				border:2px solid #333333;
+				border-style:outset;
+			    -moz-border-radius:8px;
+			    -webkit-border-radius:8px;	 	
+				text-align:center;
+				width:400px;
+				height:400px;
+				font-family:calibri;
+				font-size:large;
+			}
+
+
+#profil {
+			float:left;
+			height:600px; 
+			width:600px; 
+			margin-left:20px;
+
+		}					
+					
+legend	{
+    		top:-8px;
+			font-weight:300;
+		}
+label	{
+			font-family:calibri;
+		}
+		
+fieldset table	{
+			margin-left:auto;
+			margin-right:auto; 
+		}		
+
+/*------------------------Les Zones de saisies---------------------------------------*/
+/*
+.zoneSaisie:focus	{
+						border-color:#FF9933;	
+						background-color:#EEEEEE;
+					}
+					
+.erreur		{
+				height:100%;
+				border-color:red;
+				background-color:#EEEEEE;		
+			}	
+*/			
+/*----------------------------Messages d'erreur----------------------------*/
+/*
+.msgerreur {
+				font-family:calibri;
+				font-weight:200;
+				color:red;
+			}
+*/			
+			
+/*---------------------------------La Photo---------------------------------*/
+#image {
+			height:240px;
+			width:240px;
+			-moz-border-radius:8px;	
+			border-radius:8px;
+		}
+
+#photo {
+			float:right;
+			height:700px;
+			margin-right:100px; /*150px*/
+			-webkit-border-radius: 0.5em ; /* for Safari */ 
+			-moz-border-radius: 0.5em; /* for Firefox */
+		}		
+/*-------------------------------Le Cadre Photo----------------------------*/
+
+  #CadrePhoto	{
+					height:240px;
+					width:240px;
+					padding:7px;
+					-webkit-border-radius: 0.5em ; /* for Safari */ 
+					-moz-border-radius: 0.5em; /* for Firefox */
+					/*background-image:url(./../image/fond17.jpg);*/
+					/*z-index:1;*/
+					text-align:center;
+				}
+
+/*------------------------------- les informations --------------------------*/
+/*
+fieldset.deevospace
+{
+	padding-top: 100px;
+	height: 240px;
+	float: left;
+}
+
+fieldset#CadrePhoto
+{
+	padding-top: 100px;
+	margin-left: 30px;
+	float: left;
+}
+
+fieldset.menu_deevospace
+{
+	display: block;
+	width: 280px;
+	float: left;
+}
+*/
+/*------------------------------- les formulaires --------------------------*/
+
+#sfGuardUser_date_of_birth_day, #editProfiledeevonaute_date_of_birth_day{
+	width: 50px;
+}
+
+#sfGuardUser_date_of_birth_month, #editProfiledeevonaute_date_of_birth_month{
+	width: 100px;
+}
+
+#sfGuardUser_date_of_birth_year, #editProfiledeevonaute_date_of_birth_year{
+	width: 70px;
+}
+
+/*
+span#status{
+	position: absolute;
+	left: 400px;
+	color: blue;
+	width: 450px;
+}
+
+img.span_position_loading{
+	
+}
+
+.span_position_O{
+	right: 40px;
+	top: 2px;
+}
+
+.span_position_NotO{
+	right: -240px;
+	top: 2px;
+}
+
+.span_position_lowValu{
+	right: -280px;
+	top: 2px;
+}
+
+*/
+
+
+
+/*----------------------------Messages d'erreur----------------------------*/
+ul.error_list {
+				background-color: #FF303A;
+				border-color: green;
+				color: white;
+				font-family:calibri;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-khtml-border-radius: 5px;
+				-border-radius: 5px;
+				
+			 }
+			 
+			 
+			 
+/*--------------------------------------------------------------------------------*/
+.clear { /* generic container (i.e. div) for floating buttons */
+    overflow: hidden;
+    width: 100%;
+}
+
+a.return_button {
+    background: transparent url('../images/bg_button_a.gif') no-repeat scroll top right;
+    color: #444;
+    display: block;
+    float: left;
+    font: normal 12px arial, sans-serif;
+    height: 24px;
+    margin-right: 6px;
+    padding-right: 18px; /* sliding doors padding */
+    text-decoration: none;
+}
+
+a.return_button span {
+    background: transparent url('../images/bg_button_span.gif') no-repeat;
+    display: block;
+    line-height: 14px;
+    padding: 5px 0 5px 18px;
+}
+
+a.return_button:active {
+    background-position: bottom right;
+    color: #000;
+    outline: none; /* hide dotted outline in Firefox */
+}
+
+a.return_button:active span {
+    background-position: bottom left;
+    padding: 6px 0 4px 18px; /* push text down 1px */
+}
+
+.button {
+
+	/* Disables default styling */
+    border: none;
+    background: #00B6FF;
+    color: #fff;
+
+    /* You need to set font, font size and cursor for buttons */
+    font-size: 15px;
+    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    cursor: pointer;
+
+    /*padding: 8px 13px;*/
+    font-weight: bold;
+	height: 25px;
+	
+    border-radius: 5px;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+    box-shadow:
+        0 0 0 1px #0086ba inset, /* Outer bevel */
+        0 0 0 2px #6cdcea inset, /* Inner bevel */
+        0 30px 20px -18px rgba(255,255,255,0.65) inset, /* Inner gradient */
+        1px 1px 3px rgba(0,0,0,0.2) /* Drop shadow */
+    ;
+
+    -webkit-border-radius: 5px;
+    -webkit-text-shadow: 0 -1px 0 rgba(0,0,0,0.15);
+    -webkit-box-shadow:
+        0 0 0 1px #0086ba inset, /* Outer bevel */
+        0 0 0 2px #6cdcea inset, /* Inner bevel */
+        0 30px 20px -18px rgba(255,255,255,0.65) inset, /* Inner gradient */
+        1px 1px 3px rgba(0,0,0,0.2) /* Drop shadow */
+    ;
+}

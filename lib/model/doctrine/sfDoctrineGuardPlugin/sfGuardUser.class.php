@@ -12,5 +12,66 @@
  */
 class sfGuardUser extends PluginsfGuardUser
 {
+	public function _toString()
+	{
+		return $this->getFirstName().' '.$this->getLastName();
+	}
 
+	//get a user by his username
+	public static function getUserByUsername($username)
+	{
+		$q = Doctrine_Query::create()
+				->from('sfGuardUser s')
+				->where('s.username = ?', $username);
+				
+		return Doctrine_Core::getTable('sfGuardUser')->retrieveUser($q);
+	}
+	
+	
+	//get artist by user
+	public function getArtistByDeevonaute()
+	{
+		$q = Doctrine_Query::create()
+				->from('Artist a')
+				->where('a.sf_guard_user_id = ?', $this->getId());
+				
+		return Doctrine_Core::getTable('Artist')->retrieveArtist($q);
+	}
+	
+	//get article of this deevonaute
+	public function getArticleByDeevonaute()
+	{
+		$q = Doctrine_Query::create()
+				->from('tdArticle td_a')
+				->where('td_a.author_id = ?', $this->getId());
+				
+		return Doctrine_Core::getTable('tdArticle')->retrieveArticle($q);
+	}
+	
+	//
+	public function getActiveArticleByDeevonaute()
+	{
+		$q = Doctrine_Query::create()
+				->from('tdArticle td_a')
+				->where('td_a.active = false')
+				->leftJoin('td_a.Author a')
+				->where('a.id = ?', $this->getId());
+				
+		return Doctrine_Core::getTable('tdArticle')->retrieveArticle($q);
+	}
+	
+	//List all articles of a deevonaute
+	public function getAllActiveArticleByDeevonaute()
+	{
+		$q = Doctrine_Query::create()
+				->from('tdArticle td_a')
+				->where('td_a.active = false')
+				->leftJoin('td_a.Author a')
+				->where('a.id = ?', $this->getId());
+				
+		// return Doctrine_Core::getTable('tdArticle')->listAllArticles($q);
+		return $q->execute();
+	}
+	
+	
 }

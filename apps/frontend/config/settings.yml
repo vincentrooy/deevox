@@ -27,7 +27,7 @@ all:
     # Form security secret (CSRF protection)
     csrf_secret:            4be56a77fd06ae217873d00afe51dd756b26becf
     # For others modules
-    enabled_modules:      [default, sfGuardUser, sfGuardAuth, sfGuardRegister, sfGuardForgotPassword, sfApply]
+    enabled_modules:       [default, sfGuardUser, sfGuardAuth, sfGuardRegister, sfGuardForgotPassword, sfApply, sfFacebookConnectAuth, sfFacebookConnectDemo, cart, tdSampleArticle, comment]
  
     login_module:           sfGuardAuth
     login_action:           signin
@@ -45,4 +45,8 @@ all:
     #internationalisation
     i18n: true
     default_culture:        en
-    standard_helpers:       [Partial, Cache, I18N]
+    standard_helpers:       [Partial, Cache, I18N, jQuery]
+    jquery_web_dir:         /sfJqueryReloadedPlugin
+    jquery_core:            jquery-1.7.min.js
+    jquery_sortable:        jquery-ui-1.7.2.custom.min.js
+    jquery_autocomplete:    jquery.autocomplete.min.js

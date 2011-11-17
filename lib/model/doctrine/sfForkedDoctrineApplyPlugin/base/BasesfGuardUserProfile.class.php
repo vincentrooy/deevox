@@ -12,7 +12,6 @@
  * @property timestamp $validate_at
  * @property string $validate
  * @property string $type
- * @property string $profile_photo
  * @property string $gender
  * @property string $culture
  * @property string $country
@@ -22,74 +21,81 @@
  * @property string $city
  * @property date $date_of_birth
  * @property integer $phone_number
- * @property string $film_prefere_1
- * @property string $film_prefere_2
- * @property string $film_prefere_3
- * @property string $artiste_prefere_1
- * @property string $artiste_prefere_2
- * @property string $artiste_prefere_3
- * @property string $genre_prefere_1
- * @property string $genre_prefere_2
- * @property string $genre_prefere_3
+ * @property string $profile_photo
+ * @property string $favorite_movie_1
+ * @property string $favorite_movie_2
+ * @property string $favorite_movie_3
+ * @property string $favorite_artist_1
+ * @property string $favorite_artist_2
+ * @property string $favorite_artist_3
+ * @property string $favorite_music_genre_1
+ * @property string $favorite_music_genre_2
+ * @property string $favorite_music_genre_3
  * @property integer $size_of_storage_space
+ * @property integer $facebook_uid
+ * @property varchar $email_hash
  * @property sfGuardUser $User
  * 
- * @method integer            getUserId()                Returns the current record's "user_id" value
- * @method string             getEmailNew()              Returns the current record's "email_new" value
- * @method string             getFirstname()             Returns the current record's "firstname" value
- * @method string             getLastname()              Returns the current record's "lastname" value
- * @method timestamp          getValidateAt()            Returns the current record's "validate_at" value
- * @method string             getValidate()              Returns the current record's "validate" value
- * @method string             getType()                  Returns the current record's "type" value
- * @method string             getProfilePhoto()          Returns the current record's "profile_photo" value
- * @method string             getGender()                Returns the current record's "gender" value
- * @method string             getCulture()               Returns the current record's "culture" value
- * @method string             getCountry()               Returns the current record's "country" value
- * @method string             getWay()                   Returns the current record's "way" value
- * @method string             getAdditionalAddress()     Returns the current record's "additional_address" value
- * @method string             getZipCode()               Returns the current record's "zip_code" value
- * @method string             getCity()                  Returns the current record's "city" value
- * @method date               getDateOfBirth()           Returns the current record's "date_of_birth" value
- * @method integer            getPhoneNumber()           Returns the current record's "phone_number" value
- * @method string             getFilmPrefere1()          Returns the current record's "film_prefere_1" value
- * @method string             getFilmPrefere2()          Returns the current record's "film_prefere_2" value
- * @method string             getFilmPrefere3()          Returns the current record's "film_prefere_3" value
- * @method string             getArtistePrefere1()       Returns the current record's "artiste_prefere_1" value
- * @method string             getArtistePrefere2()       Returns the current record's "artiste_prefere_2" value
- * @method string             getArtistePrefere3()       Returns the current record's "artiste_prefere_3" value
- * @method string             getGenrePrefere1()         Returns the current record's "genre_prefere_1" value
- * @method string             getGenrePrefere2()         Returns the current record's "genre_prefere_2" value
- * @method string             getGenrePrefere3()         Returns the current record's "genre_prefere_3" value
- * @method integer            getSizeOfStorageSpace()    Returns the current record's "size_of_storage_space" value
- * @method sfGuardUser        getUser()                  Returns the current record's "User" value
- * @method sfGuardUserProfile setUserId()                Sets the current record's "user_id" value
- * @method sfGuardUserProfile setEmailNew()              Sets the current record's "email_new" value
- * @method sfGuardUserProfile setFirstname()             Sets the current record's "firstname" value
- * @method sfGuardUserProfile setLastname()              Sets the current record's "lastname" value
- * @method sfGuardUserProfile setValidateAt()            Sets the current record's "validate_at" value
- * @method sfGuardUserProfile setValidate()              Sets the current record's "validate" value
- * @method sfGuardUserProfile setType()                  Sets the current record's "type" value
- * @method sfGuardUserProfile setProfilePhoto()          Sets the current record's "profile_photo" value
- * @method sfGuardUserProfile setGender()                Sets the current record's "gender" value
- * @method sfGuardUserProfile setCulture()               Sets the current record's "culture" value
- * @method sfGuardUserProfile setCountry()               Sets the current record's "country" value
- * @method sfGuardUserProfile setWay()                   Sets the current record's "way" value
- * @method sfGuardUserProfile setAdditionalAddress()     Sets the current record's "additional_address" value
- * @method sfGuardUserProfile setZipCode()               Sets the current record's "zip_code" value
- * @method sfGuardUserProfile setCity()                  Sets the current record's "city" value
- * @method sfGuardUserProfile setDateOfBirth()           Sets the current record's "date_of_birth" value
- * @method sfGuardUserProfile setPhoneNumber()           Sets the current record's "phone_number" value
- * @method sfGuardUserProfile setFilmPrefere1()          Sets the current record's "film_prefere_1" value
- * @method sfGuardUserProfile setFilmPrefere2()          Sets the current record's "film_prefere_2" value
- * @method sfGuardUserProfile setFilmPrefere3()          Sets the current record's "film_prefere_3" value
- * @method sfGuardUserProfile setArtistePrefere1()       Sets the current record's "artiste_prefere_1" value
- * @method sfGuardUserProfile setArtistePrefere2()       Sets the current record's "artiste_prefere_2" value
- * @method sfGuardUserProfile setArtistePrefere3()       Sets the current record's "artiste_prefere_3" value
- * @method sfGuardUserProfile setGenrePrefere1()         Sets the current record's "genre_prefere_1" value
- * @method sfGuardUserProfile setGenrePrefere2()         Sets the current record's "genre_prefere_2" value
- * @method sfGuardUserProfile setGenrePrefere3()         Sets the current record's "genre_prefere_3" value
- * @method sfGuardUserProfile setSizeOfStorageSpace()    Sets the current record's "size_of_storage_space" value
- * @method sfGuardUserProfile setUser()                  Sets the current record's "User" value
+ * @method integer            getUserId()                 Returns the current record's "user_id" value
+ * @method string             getEmailNew()               Returns the current record's "email_new" value
+ * @method string             getFirstname()              Returns the current record's "firstname" value
+ * @method string             getLastname()               Returns the current record's "lastname" value
+ * @method timestamp          getValidateAt()             Returns the current record's "validate_at" value
+ * @method string             getValidate()               Returns the current record's "validate" value
+ * @method string             getType()                   Returns the current record's "type" value
+ * @method string             getGender()                 Returns the current record's "gender" value
+ * @method string             getCulture()                Returns the current record's "culture" value
+ * @method string             getCountry()                Returns the current record's "country" value
+ * @method string             getWay()                    Returns the current record's "way" value
+ * @method string             getAdditionalAddress()      Returns the current record's "additional_address" value
+ * @method string             getZipCode()                Returns the current record's "zip_code" value
+ * @method string             getCity()                   Returns the current record's "city" value
+ * @method date               getDateOfBirth()            Returns the current record's "date_of_birth" value
+ * @method integer            getPhoneNumber()            Returns the current record's "phone_number" value
+ * @method string             getProfilePhoto()           Returns the current record's "profile_photo" value
+ * @method string             getFavoriteMovie1()         Returns the current record's "favorite_movie_1" value
+ * @method string             getFavoriteMovie2()         Returns the current record's "favorite_movie_2" value
+ * @method string             getFavoriteMovie3()         Returns the current record's "favorite_movie_3" value
+ * @method string             getFavoriteArtist1()        Returns the current record's "favorite_artist_1" value
+ * @method string             getFavoriteArtist2()        Returns the current record's "favorite_artist_2" value
+ * @method string             getFavoriteArtist3()        Returns the current record's "favorite_artist_3" value
+ * @method string             getFavoriteMusicGenre1()    Returns the current record's "favorite_music_genre_1" value
+ * @method string             getFavoriteMusicGenre2()    Returns the current record's "favorite_music_genre_2" value
+ * @method string             getFavoriteMusicGenre3()    Returns the current record's "favorite_music_genre_3" value
+ * @method integer            getSizeOfStorageSpace()     Returns the current record's "size_of_storage_space" value
+ * @method integer            getFacebookUid()            Returns the current record's "facebook_uid" value
+ * @method varchar            getEmailHash()              Returns the current record's "email_hash" value
+ * @method sfGuardUser        getUser()                   Returns the current record's "User" value
+ * @method sfGuardUserProfile setUserId()                 Sets the current record's "user_id" value
+ * @method sfGuardUserProfile setEmailNew()               Sets the current record's "email_new" value
+ * @method sfGuardUserProfile setFirstname()              Sets the current record's "firstname" value
+ * @method sfGuardUserProfile setLastname()               Sets the current record's "lastname" value
+ * @method sfGuardUserProfile setValidateAt()             Sets the current record's "validate_at" value
+ * @method sfGuardUserProfile setValidate()               Sets the current record's "validate" value
+ * @method sfGuardUserProfile setType()                   Sets the current record's "type" value
+ * @method sfGuardUserProfile setGender()                 Sets the current record's "gender" value
+ * @method sfGuardUserProfile setCulture()                Sets the current record's "culture" value
+ * @method sfGuardUserProfile setCountry()                Sets the current record's "country" value
+ * @method sfGuardUserProfile setWay()                    Sets the current record's "way" value
+ * @method sfGuardUserProfile setAdditionalAddress()      Sets the current record's "additional_address" value
+ * @method sfGuardUserProfile setZipCode()                Sets the current record's "zip_code" value
+ * @method sfGuardUserProfile setCity()                   Sets the current record's "city" value
+ * @method sfGuardUserProfile setDateOfBirth()            Sets the current record's "date_of_birth" value
+ * @method sfGuardUserProfile setPhoneNumber()            Sets the current record's "phone_number" value
+ * @method sfGuardUserProfile setProfilePhoto()           Sets the current record's "profile_photo" value
+ * @method sfGuardUserProfile setFavoriteMovie1()         Sets the current record's "favorite_movie_1" value
+ * @method sfGuardUserProfile setFavoriteMovie2()         Sets the current record's "favorite_movie_2" value
+ * @method sfGuardUserProfile setFavoriteMovie3()         Sets the current record's "favorite_movie_3" value
+ * @method sfGuardUserProfile setFavoriteArtist1()        Sets the current record's "favorite_artist_1" value
+ * @method sfGuardUserProfile setFavoriteArtist2()        Sets the current record's "favorite_artist_2" value
+ * @method sfGuardUserProfile setFavoriteArtist3()        Sets the current record's "favorite_artist_3" value
+ * @method sfGuardUserProfile setFavoriteMusicGenre1()    Sets the current record's "favorite_music_genre_1" value
+ * @method sfGuardUserProfile setFavoriteMusicGenre2()    Sets the current record's "favorite_music_genre_2" value
+ * @method sfGuardUserProfile setFavoriteMusicGenre3()    Sets the current record's "favorite_music_genre_3" value
+ * @method sfGuardUserProfile setSizeOfStorageSpace()     Sets the current record's "size_of_storage_space" value
+ * @method sfGuardUserProfile setFacebookUid()            Sets the current record's "facebook_uid" value
+ * @method sfGuardUserProfile setEmailHash()              Sets the current record's "email_hash" value
+ * @method sfGuardUserProfile setUser()                   Sets the current record's "User" value
  * 
  * @package    deevox
  * @subpackage model
@@ -128,11 +134,6 @@ abstract class BasesfGuardUserProfile extends sfDoctrineRecord
              ));
         $this->hasColumn('type', 'string', 255, array(
              'type' => 'string',
-             'length' => 255,
-             ));
-        $this->hasColumn('profile_photo', 'string', 255, array(
-             'type' => 'string',
-             'notnull' => false,
              'length' => 255,
              ));
         $this->hasColumn('gender', 'string', 10, array(
@@ -180,45 +181,58 @@ abstract class BasesfGuardUserProfile extends sfDoctrineRecord
              'notnull' => true,
              'length' => 20,
              ));
-        $this->hasColumn('film_prefere_1', 'string', 100, array(
+        $this->hasColumn('profile_photo', 'string', 255, array(
+             'type' => 'string',
+             'notnull' => false,
+             'length' => 255,
+             ));
+        $this->hasColumn('favorite_movie_1', 'string', 100, array(
              'type' => 'string',
              'length' => 100,
              ));
-        $this->hasColumn('film_prefere_2', 'string', 100, array(
+        $this->hasColumn('favorite_movie_2', 'string', 100, array(
              'type' => 'string',
              'length' => 100,
              ));
-        $this->hasColumn('film_prefere_3', 'string', 100, array(
+        $this->hasColumn('favorite_movie_3', 'string', 100, array(
              'type' => 'string',
              'length' => 100,
              ));
-        $this->hasColumn('artiste_prefere_1', 'string', 100, array(
+        $this->hasColumn('favorite_artist_1', 'string', 100, array(
              'type' => 'string',
              'length' => 100,
              ));
-        $this->hasColumn('artiste_prefere_2', 'string', 100, array(
+        $this->hasColumn('favorite_artist_2', 'string', 100, array(
              'type' => 'string',
              'length' => 100,
              ));
-        $this->hasColumn('artiste_prefere_3', 'string', 100, array(
+        $this->hasColumn('favorite_artist_3', 'string', 100, array(
              'type' => 'string',
              'length' => 100,
              ));
-        $this->hasColumn('genre_prefere_1', 'string', 100, array(
+        $this->hasColumn('favorite_music_genre_1', 'string', 100, array(
              'type' => 'string',
              'length' => 100,
              ));
-        $this->hasColumn('genre_prefere_2', 'string', 100, array(
+        $this->hasColumn('favorite_music_genre_2', 'string', 100, array(
              'type' => 'string',
              'length' => 100,
              ));
-        $this->hasColumn('genre_prefere_3', 'string', 100, array(
+        $this->hasColumn('favorite_music_genre_3', 'string', 100, array(
              'type' => 'string',
              'length' => 100,
              ));
         $this->hasColumn('size_of_storage_space', 'integer', null, array(
              'type' => 'integer',
              'default' => 0,
+             ));
+        $this->hasColumn('facebook_uid', 'integer', 5, array(
+             'type' => 'integer',
+             'length' => 5,
+             ));
+        $this->hasColumn('email_hash', 'varchar', 255, array(
+             'type' => 'varchar',
+             'length' => 255,
              ));
 
 
@@ -231,7 +245,7 @@ abstract class BasesfGuardUserProfile extends sfDoctrineRecord
         $this->setSubClasses(array(
              'Deevonaute' => 
              array(
-              'type' => 1,
+              'type' => 'Deevonaute',
              ),
              ));
     }

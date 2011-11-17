@@ -1,0 +1,58 @@
+# lapeGravatarPlugin (for symfony 1.3/1.4) #
+
+The `lapeGravatarPlugin` is a symfony plugin that provides easy gravatar
+integration and configuration for your project application.
+
+It consists of helper and the behavior for Doctrine models.
+
+## Installation ##
+
+  * Install the plugin
+    
+        symfony plugin:install lapeGravatarPlugin
+
+  * Activate the plugin in the `config/ProjectConfiguration.class.php`
+  
+        [php]
+        class ProjectConfiguration extends sfProjectConfiguration
+        {
+          public function setup()
+          {
+            $this->enablePlugins(array(
+              '...',
+              'lapeGravatarPlugin',
+              '...'
+            ));
+          }
+        }
+
+  * Clear you cache
+
+        symfony cc
+
+
+## Behaviors configuration ##
+
+The plugin include behavior for Doctrine models.
+
+  * Add `actAs: [...,Gravatarable,...]` to your model, it has only one param `email_field`
+
+        actAs:
+          Gravatar:
+            email_field: email_address
+
+## Behaviors usage ##
+
+  * To use your model with Gravatar or Gravatarable (as you want) behavior use next method:
+		
+		$mode->getGravatarUrl()
+		
+## Helper usage ##
+  
+  * To use helpers:
+		
+		gravatar_path()
+		
+	or
+		
+		gravatar_tag()
